@@ -1,0 +1,1356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FeEGELib: FeEGELib.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FeEGELib
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.13.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_fe_e_g_e_lib_8h.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#namespaces">命名空间</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle"><div class="title">FeEGELib.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;graphics.h&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;queue&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;malloc.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
+</div>
+<p><a href="_fe_e_g_e_lib_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_position.html">Position</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fe_e_g_e_1_1_clones_events.html">FeEGE::ClonesEvents</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">克隆体事件  <a href="class_fe_e_g_e_1_1_clones_events.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fe_e_g_e_1_1_input_box_event.html">FeEGE::InputBoxEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">输入框事件  <a href="class_fe_e_g_e_1_1_input_box_event.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fe_e_g_e_1_1_events.html">FeEGE::Events</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fe_e_g_e_1_1_pen_types.html">FeEGE::PenTypes</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">画笔对齐属性  <a href="class_fe_e_g_e_1_1_pen_types.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_animate.html">Animate</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_element.html">Element</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_box_set.html">InputBoxSet</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_box.html">InputBox</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_button.html">Button</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcmp.html">cmp</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_fe_e_g_e.html">FeEGE</a></td></tr>
+<tr class="memdesc:namespace_fe_e_g_e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_fe_e_g_e.html" title="FeEGE 主命名空间">FeEGE</a> 主命名空间 <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ease.html">Ease</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepen.html">pen</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a6d9a467c72db0d6402a4ccdf86933878" id="r_a6d9a467c72db0d6402a4ccdf86933878"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d9a467c72db0d6402a4ccdf86933878">FeEGELib_version</a>&#160;&#160;&#160;&quot;V1.2.15.0--upd2025-01-07&quot;</td></tr>
+<tr class="separator:a6d9a467c72db0d6402a4ccdf86933878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a79e63190ab37e5d6dafdd1eef5630f" id="r_a2a79e63190ab37e5d6dafdd1eef5630f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a79e63190ab37e5d6dafdd1eef5630f">version</a>()</td></tr>
+<tr class="separator:a2a79e63190ab37e5d6dafdd1eef5630f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7837b82187f56db041c39b0913c5dfa5" id="r_a7837b82187f56db041c39b0913c5dfa5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7837b82187f56db041c39b0913c5dfa5">MAXCLONESCOUNT</a>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:a7837b82187f56db041c39b0913c5dfa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f9b1b85cdd0f3bde98282a1b2381005" id="r_a4f9b1b85cdd0f3bde98282a1b2381005"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f9b1b85cdd0f3bde98282a1b2381005">MAXELEMENTCOUNT</a>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:a4f9b1b85cdd0f3bde98282a1b2381005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88efc8b48e041ff6182b56cde95f716b" id="r_a88efc8b48e041ff6182b56cde95f716b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88efc8b48e041ff6182b56cde95f716b">LeftButton</a>&#160;&#160;&#160;VK_LBUTTON</td></tr>
+<tr class="separator:a88efc8b48e041ff6182b56cde95f716b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25274c13d478263ec5322541d7bbfeee" id="r_a25274c13d478263ec5322541d7bbfeee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25274c13d478263ec5322541d7bbfeee">log</a>&#160;&#160;&#160;printf</td></tr>
+<tr class="separator:a25274c13d478263ec5322541d7bbfeee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac40c2b49eb51e2adc237b530adfcadf4" id="r_ac40c2b49eb51e2adc237b530adfcadf4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac40c2b49eb51e2adc237b530adfcadf4">PIE</a>&#160;&#160;&#160;3.141592653589793238462643383279502f</td></tr>
+<tr class="separator:ac40c2b49eb51e2adc237b530adfcadf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f6be9ac76a2e065e034c89f0cfe6763" id="r_a1f6be9ac76a2e065e034c89f0cfe6763"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f6be9ac76a2e065e034c89f0cfe6763">initXY</a>()</td></tr>
+<tr class="separator:a1f6be9ac76a2e065e034c89f0cfe6763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a207fd5507206d307cd63f95374fcd00d" id="r_a207fd5507206d307cd63f95374fcd00d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a207fd5507206d307cd63f95374fcd00d">X</a>&#160;&#160;&#160;<a class="el" href="#a59c3bba4b17cd5e19f149ea175fa6989">WIDTH</a></td></tr>
+<tr class="separator:a207fd5507206d307cd63f95374fcd00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a798e4073d613ca5ba9618e1b3253df14" id="r_a798e4073d613ca5ba9618e1b3253df14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a798e4073d613ca5ba9618e1b3253df14">Y</a>&#160;&#160;&#160;<a class="el" href="#a4e81322eb1085aca9cd7c5527f5e4c6b">HEIGHT</a></td></tr>
+<tr class="separator:a798e4073d613ca5ba9618e1b3253df14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ae625c76239a79060894c09200fd45458" id="r_ae625c76239a79060894c09200fd45458"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae625c76239a79060894c09200fd45458">reg_Element</a> (<a class="el" href="class_element.html">Element</a> *element)</td></tr>
+<tr class="separator:ae625c76239a79060894c09200fd45458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2601aa74302c0fa42d6b7a4e332104c0" id="r_a2601aa74302c0fa42d6b7a4e332104c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_element.html">Element</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2601aa74302c0fa42d6b7a4e332104c0">newElement</a> (string, PIMAGE, double, double)</td></tr>
+<tr class="separator:a2601aa74302c0fa42d6b7a4e332104c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54d815a3ea83a3c2b1669c3d0aab5b71" id="r_a54d815a3ea83a3c2b1669c3d0aab5b71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_element.html">Element</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54d815a3ea83a3c2b1669c3d0aab5b71">newElement</a> (string, string, double, double)</td></tr>
+<tr class="separator:a54d815a3ea83a3c2b1669c3d0aab5b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f12a64b87e6cf1be8360bbb056f8680" id="r_a2f12a64b87e6cf1be8360bbb056f8680"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f12a64b87e6cf1be8360bbb056f8680">sgn</a> (double x)</td></tr>
+<tr class="separator:a2f12a64b87e6cf1be8360bbb056f8680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ce32897f9939a7d33523fa0a4b21465" id="r_a2ce32897f9939a7d33523fa0a4b21465"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_fe_e_g_e.html#a2ce32897f9939a7d33523fa0a4b21465">FeEGE::getkey</a> (int VK)</td></tr>
+<tr class="memdesc:a2ce32897f9939a7d33523fa0a4b21465"><td class="mdescLeft">&#160;</td><td class="mdescRight">这个函数用于获取某个按键的状态  <br /></td></tr>
+<tr class="separator:a2ce32897f9939a7d33523fa0a4b21465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa4541df67729f58a2c738e37d528595" id="r_afa4541df67729f58a2c738e37d528595"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_fe_e_g_e.html#afa4541df67729f58a2c738e37d528595">FeEGE::enable_pause</a> ()</td></tr>
+<tr class="memdesc:afa4541df67729f58a2c738e37d528595"><td class="mdescLeft">&#160;</td><td class="mdescRight">允许暂停  <br /></td></tr>
+<tr class="separator:afa4541df67729f58a2c738e37d528595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7fba763f716594b10d43d2c1a860c7e" id="r_ab7fba763f716594b10d43d2c1a860c7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_fe_e_g_e.html#ab7fba763f716594b10d43d2c1a860c7e">FeEGE::disable_pause</a> ()</td></tr>
+<tr class="memdesc:ab7fba763f716594b10d43d2c1a860c7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">不允许暂停  <br /></td></tr>
+<tr class="separator:ab7fba763f716594b10d43d2c1a860c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a01853f417615e2df58fa656a4a7830" id="r_a3a01853f417615e2df58fa656a4a7830"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_element.html">Element</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_fe_e_g_e.html#a3a01853f417615e2df58fa656a4a7830">FeEGE::getElementById</a> (string)</td></tr>
+<tr class="separator:a3a01853f417615e2df58fa656a4a7830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18f8569a97cca615b464f860b0f98549" id="r_a18f8569a97cca615b464f860b0f98549"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_element.html">Element</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_fe_e_g_e.html#a18f8569a97cca615b464f860b0f98549">FeEGE::getElementByPtr</a> (<a class="el" href="class_element.html">Element</a> *)</td></tr>
+<tr class="separator:a18f8569a97cca615b464f860b0f98549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a560ed97d6c8d16b73f99628ab46c3bba" id="r_a560ed97d6c8d16b73f99628ab46c3bba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_fe_e_g_e.html#a560ed97d6c8d16b73f99628ab46c3bba">FeEGE::initpen</a> ()</td></tr>
+<tr class="memdesc:a560ed97d6c8d16b73f99628ab46c3bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化画笔，此方法在 init 方法中会被调用一次，无需手动调用  <br /></td></tr>
+<tr class="separator:a560ed97d6c8d16b73f99628ab46c3bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d286e9dc63cbf315d437de5dbd4d8e9" id="r_a1d286e9dc63cbf315d437de5dbd4d8e9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_fe_e_g_e.html#a1d286e9dc63cbf315d437de5dbd4d8e9">FeEGE::getMs</a> ()</td></tr>
+<tr class="memdesc:a1d286e9dc63cbf315d437de5dbd4d8e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前系统时间（精确到毫秒）  <br /></td></tr>
+<tr class="separator:a1d286e9dc63cbf315d437de5dbd4d8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a686186d00b182cdc464d87e6648ac921" id="r_a686186d00b182cdc464d87e6648ac921"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_fe_e_g_e.html#a686186d00b182cdc464d87e6648ac921">FeEGE::push_schedule</a> (function&lt; void(void)&gt; func)</td></tr>
+<tr class="memdesc:a686186d00b182cdc464d87e6648ac921"><td class="mdescLeft">&#160;</td><td class="mdescRight">在下一帧安排一个任务  <br /></td></tr>
+<tr class="separator:a686186d00b182cdc464d87e6648ac921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d9dc0b518a0979a642c5fc99035e3c2" id="r_a0d9dc0b518a0979a642c5fc99035e3c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_fe_e_g_e.html#a0d9dc0b518a0979a642c5fc99035e3c2">FeEGE::setTimeOut</a> (function&lt; void(void)&gt; func, double time_ms)</td></tr>
+<tr class="memdesc:a0d9dc0b518a0979a642c5fc99035e3c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置延时调用某个任务  <br /></td></tr>
+<tr class="separator:a0d9dc0b518a0979a642c5fc99035e3c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d5a2e74125a3c8894bfd40fea649b05" id="r_a1d5a2e74125a3c8894bfd40fea649b05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_position.html">Position</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_fe_e_g_e.html#a1d5a2e74125a3c8894bfd40fea649b05">FeEGE::getLastPixel</a> ()</td></tr>
+<tr class="memdesc:a1d5a2e74125a3c8894bfd40fea649b05"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取系统最后一次的像素（通常为 <a class="el" href="class_element.html#a85b13e33ad8f9032bc06ba0c72171fb2">Element::is_touched_by</a> 方法调用后获取碰撞像素之一）  <br /></td></tr>
+<tr class="separator:a1d5a2e74125a3c8894bfd40fea649b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a526ec118ca1e436d18b38bc42b44eb8c" id="r_a526ec118ca1e436d18b38bc42b44eb8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_position.html">Position</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_fe_e_g_e.html#a526ec118ca1e436d18b38bc42b44eb8c">FeEGE::getMousePos</a> ()</td></tr>
+<tr class="memdesc:a526ec118ca1e436d18b38bc42b44eb8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取鼠标像素  <br /></td></tr>
+<tr class="separator:a526ec118ca1e436d18b38bc42b44eb8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9196715821fb681169b01fe3e12eda2" id="r_ac9196715821fb681169b01fe3e12eda2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_animate.html">Animate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ease.html#ac9196715821fb681169b01fe3e12eda2">Ease::EaseInOutCubicX</a> ([&amp;](double tick) -&gt; <a class="el" href="class_position.html">Position</a> { return {tick&lt;=0.5 ? 4 *tick *tick *tick :1 - pow(-2 *tick+2, 3)/2, 0};}, 0.002, 1)</td></tr>
+<tr class="separator:ac9196715821fb681169b01fe3e12eda2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54406fc28c341d05223d09edebd8eb91" id="r_a54406fc28c341d05223d09edebd8eb91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_animate.html">Animate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ease.html#a54406fc28c341d05223d09edebd8eb91">Ease::EaseInOutCubicY</a> ([&amp;](double tick) -&gt; <a class="el" href="class_position.html">Position</a> { return {0, tick&lt;=0.5 ? 4 *tick *tick *tick :1 - pow(-2 *tick+2, 3)/2};}, 0.002, 1)</td></tr>
+<tr class="separator:a54406fc28c341d05223d09edebd8eb91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d9283ee9006b8ebb10205fad34e1ea" id="r_a23d9283ee9006b8ebb10205fad34e1ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_animate.html">Animate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ease.html#a23d9283ee9006b8ebb10205fad34e1ea">Ease::EaseOutQuadX</a> ([&amp;](double tick) -&gt; <a class="el" href="class_position.html">Position</a> { return {1 -(1 - tick) *(1 - tick), 0};}, 0.002, 1)</td></tr>
+<tr class="separator:a23d9283ee9006b8ebb10205fad34e1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a76f58f83f3397dc87a408a190e6499" id="r_a7a76f58f83f3397dc87a408a190e6499"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_animate.html">Animate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ease.html#a7a76f58f83f3397dc87a408a190e6499">Ease::EaseOutQuadY</a> ([&amp;](double tick) -&gt; <a class="el" href="class_position.html">Position</a> { return {0, 1 -(1 - tick) *(1 - tick)};}, 0.002, 1)</td></tr>
+<tr class="separator:a7a76f58f83f3397dc87a408a190e6499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af21f98f6892484de88e82dafb9c3dcb4" id="r_af21f98f6892484de88e82dafb9c3dcb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepen.html#af21f98f6892484de88e82dafb9c3dcb4">pen::print</a> (int x, int y, string str)</td></tr>
+<tr class="separator:af21f98f6892484de88e82dafb9c3dcb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a339810646a2cd2e80812098cc23a5041" id="r_a339810646a2cd2e80812098cc23a5041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepen.html#a339810646a2cd2e80812098cc23a5041">pen::font</a> (int scale, string fontname=&quot;幼圆&quot;)</td></tr>
+<tr class="separator:a339810646a2cd2e80812098cc23a5041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88271090d2463068d7854c80354893ac" id="r_a88271090d2463068d7854c80354893ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepen.html#a88271090d2463068d7854c80354893ac">pen::color</a> (color_t color)</td></tr>
+<tr class="separator:a88271090d2463068d7854c80354893ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9982fd2a4cb7ea1ca34f499ba2b494d2" id="r_a9982fd2a4cb7ea1ca34f499ba2b494d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepen.html#a9982fd2a4cb7ea1ca34f499ba2b494d2">pen::type</a> (int Type)</td></tr>
+<tr class="separator:a9982fd2a4cb7ea1ca34f499ba2b494d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a767f11f46c0f272682525f8a5e97871c" id="r_a767f11f46c0f272682525f8a5e97871c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepen.html#a767f11f46c0f272682525f8a5e97871c">pen::clear</a> (int x, int y, int ex, int ey)</td></tr>
+<tr class="separator:a767f11f46c0f272682525f8a5e97871c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae647d6f2d35e3431299164e697a60006" id="r_ae647d6f2d35e3431299164e697a60006"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepen.html#ae647d6f2d35e3431299164e697a60006">pen::clear_char</a> (int x, int y)</td></tr>
+<tr class="separator:ae647d6f2d35e3431299164e697a60006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae93240d304cd0e92fd3642bda9445a95" id="r_ae93240d304cd0e92fd3642bda9445a95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepen.html#ae93240d304cd0e92fd3642bda9445a95">pen::clear_chars</a> (int x, int y, int charcount)</td></tr>
+<tr class="separator:ae93240d304cd0e92fd3642bda9445a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0757e801d0040f9ed378b7f661feff2" id="r_ad0757e801d0040f9ed378b7f661feff2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepen.html#ad0757e801d0040f9ed378b7f661feff2">pen::clear_all</a> ()</td></tr>
+<tr class="separator:ad0757e801d0040f9ed378b7f661feff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f35847e05a1b6840687c499ccd7afb" id="r_af4f35847e05a1b6840687c499ccd7afb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepen.html#af4f35847e05a1b6840687c499ccd7afb">pen::setorder</a> (int value)</td></tr>
+<tr class="separator:af4f35847e05a1b6840687c499ccd7afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc961a44d6e85bf08693bcd2a94832f5" id="r_abc961a44d6e85bf08693bcd2a94832f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepen.html#abc961a44d6e85bf08693bcd2a94832f5">pen::set_alpha</a> (short alpha)</td></tr>
+<tr class="memdesc:abc961a44d6e85bf08693bcd2a94832f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the alpha object  <br /></td></tr>
+<tr class="separator:abc961a44d6e85bf08693bcd2a94832f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab26f4b037799811280cf6e9dc7f96c43" id="r_ab26f4b037799811280cf6e9dc7f96c43"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepen.html#ab26f4b037799811280cf6e9dc7f96c43">pen::get_alpha</a> ()</td></tr>
+<tr class="memdesc:ab26f4b037799811280cf6e9dc7f96c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the alpha object  <br /></td></tr>
+<tr class="separator:ab26f4b037799811280cf6e9dc7f96c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1d29a4e893b90719aff70133e717e45" id="r_ae1d29a4e893b90719aff70133e717e45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepen.html#ae1d29a4e893b90719aff70133e717e45">pen::increase_alpha</a> (short alpha)</td></tr>
+<tr class="separator:ae1d29a4e893b90719aff70133e717e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14bd6fd739ef8ffa3838fb87b16da354" id="r_a14bd6fd739ef8ffa3838fb87b16da354"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepen.html#a14bd6fd739ef8ffa3838fb87b16da354">pen::decrease_alpha</a> (short alpha)</td></tr>
+<tr class="separator:a14bd6fd739ef8ffa3838fb87b16da354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1080385ddb434e09e11b1f2b3de8fa2e" id="r_a1080385ddb434e09e11b1f2b3de8fa2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepen.html#a1080385ddb434e09e11b1f2b3de8fa2e">pen::print_line</a> (int x1, int y1, int x2, int y2)</td></tr>
+<tr class="separator:a1080385ddb434e09e11b1f2b3de8fa2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfa93af76f94f7498967cbe7af30678f" id="r_acfa93af76f94f7498967cbe7af30678f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepen.html#acfa93af76f94f7498967cbe7af30678f">pen::print_bar</a> (int left, int top, int right, int bottom)</td></tr>
+<tr class="separator:acfa93af76f94f7498967cbe7af30678f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd2b882d41d6ccbe23d0d9505b8ca62" id="r_afdd2b882d41d6ccbe23d0d9505b8ca62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_button.html">Button</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdd2b882d41d6ccbe23d0d9505b8ca62">newButton</a> (string id, string ImagePath, double x, double y, function&lt; void(<a class="el" href="class_element.html">Element</a> *)&gt; put_on=nullptr, function&lt; void(<a class="el" href="class_element.html">Element</a> *)&gt; move_away=nullptr, function&lt; void(<a class="el" href="class_element.html">Element</a> *)&gt; on_click=nullptr)</td></tr>
+<tr class="separator:afdd2b882d41d6ccbe23d0d9505b8ca62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0b83fec1f079fdfc6b271a65784da6a" id="r_af0b83fec1f079fdfc6b271a65784da6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0b83fec1f079fdfc6b271a65784da6a">SelectInputBox</a> (<a class="el" href="class_input_box.html">InputBox</a> *inputBox)</td></tr>
+<tr class="separator:af0b83fec1f079fdfc6b271a65784da6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f238a362fd3cc7b83d7289c4e10701" id="r_ac7f238a362fd3cc7b83d7289c4e10701"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_element.html">Element</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7f238a362fd3cc7b83d7289c4e10701">newInputBox</a> (string id, string ImagePath, double x, double y, <a class="el" href="class_element.html">Element</a> *submit_button, function&lt; void(<a class="el" href="class_element.html">Element</a> *)&gt; on_submit=nullptr, function&lt; void(<a class="el" href="class_element.html">Element</a> *)&gt; on_selected=nullptr)</td></tr>
+<tr class="separator:ac7f238a362fd3cc7b83d7289c4e10701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee070a861cc0647e57b6549bec34d807" id="r_aee070a861cc0647e57b6549bec34d807"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee070a861cc0647e57b6549bec34d807">globalListen</a> (int listen_mode, string identifier, auto function)</td></tr>
+<tr class="separator:aee070a861cc0647e57b6549bec34d807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f959a7bd72a9fc756149eb63c838e80" id="r_a6f959a7bd72a9fc756149eb63c838e80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f959a7bd72a9fc756149eb63c838e80">stopGlobalListen</a> (int listen_mode, string identifier)</td></tr>
+<tr class="separator:a6f959a7bd72a9fc756149eb63c838e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a128952854ca90868b475af18eeb19bd7" id="r_a128952854ca90868b475af18eeb19bd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a128952854ca90868b475af18eeb19bd7">reflush</a> ()</td></tr>
+<tr class="separator:a128952854ca90868b475af18eeb19bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a909f4bd65ee24e59e188ae93c3e0e8c4" id="r_a909f4bd65ee24e59e188ae93c3e0e8c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a909f4bd65ee24e59e188ae93c3e0e8c4">init</a> (int x, int y)</td></tr>
+<tr class="separator:a909f4bd65ee24e59e188ae93c3e0e8c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60de64d75454385b23995437f1d72669" id="r_a60de64d75454385b23995437f1d72669"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60de64d75454385b23995437f1d72669">start</a> ()</td></tr>
+<tr class="separator:a60de64d75454385b23995437f1d72669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a3d8c24629d725b9ef8c238cf27c9b158" id="r_a3d8c24629d725b9ef8c238cf27c9b158"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d8c24629d725b9ef8c238cf27c9b158">eps</a> = 1e-7</td></tr>
+<tr class="separator:a3d8c24629d725b9ef8c238cf27c9b158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf178c0d4fd43d942a79cab670f6c4a6" id="r_acf178c0d4fd43d942a79cab670f6c4a6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf178c0d4fd43d942a79cab670f6c4a6">GlobalRating</a> = 1.00f</td></tr>
+<tr class="separator:acf178c0d4fd43d942a79cab670f6c4a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8eec6ab31f0b4dafbbbfef9c26376e2" id="r_ae8eec6ab31f0b4dafbbbfef9c26376e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8eec6ab31f0b4dafbbbfef9c26376e2">iskey</a> = false</td></tr>
+<tr class="separator:ae8eec6ab31f0b4dafbbbfef9c26376e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeefe5fe064a6fbe3be9afcce7734fad" id="r_adeefe5fe064a6fbe3be9afcce7734fad"><td class="memItemLeft" align="right" valign="top">key_msg&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adeefe5fe064a6fbe3be9afcce7734fad">keymsg</a></td></tr>
+<tr class="separator:adeefe5fe064a6fbe3be9afcce7734fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f39f419f621b9148e75a34075b7a891" id="r_a0f39f419f621b9148e75a34075b7a891"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f39f419f621b9148e75a34075b7a891">mousehit</a> = false</td></tr>
+<tr class="separator:a0f39f419f621b9148e75a34075b7a891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17b4309595c1f66709998c0cd3c38b21" id="r_a17b4309595c1f66709998c0cd3c38b21"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17b4309595c1f66709998c0cd3c38b21">needsort</a> = true</td></tr>
+<tr class="separator:a17b4309595c1f66709998c0cd3c38b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bc93499a3b1b40d903f22185a754405" id="r_a2bc93499a3b1b40d903f22185a754405"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bc93499a3b1b40d903f22185a754405">reg_pause</a> = false</td></tr>
+<tr class="separator:a2bc93499a3b1b40d903f22185a754405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5692ef595aa8879829a4e2e9dded9bb5" id="r_a5692ef595aa8879829a4e2e9dded9bb5"><td class="memItemLeft" align="right" valign="top">mouse_msg&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5692ef595aa8879829a4e2e9dded9bb5">mouseinfo</a></td></tr>
+<tr class="separator:a5692ef595aa8879829a4e2e9dded9bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a227fd4440811d6d09a4c24737ec772f9" id="r_a227fd4440811d6d09a4c24737ec772f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a227fd4440811d6d09a4c24737ec772f9">keystatus</a> [360]</td></tr>
+<tr class="separator:a227fd4440811d6d09a4c24737ec772f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40489e4ca16505489bd0507204ac4320" id="r_a40489e4ca16505489bd0507204ac4320"><td class="memItemLeft" align="right" valign="top">map&lt; string, function&lt; void(void)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40489e4ca16505489bd0507204ac4320">globalListen_frame_function_set</a></td></tr>
+<tr class="separator:a40489e4ca16505489bd0507204ac4320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a212710b770d16da09b110549c4c962fe" id="r_a212710b770d16da09b110549c4c962fe"><td class="memItemLeft" align="right" valign="top">map&lt; string, function&lt; void(void)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a212710b770d16da09b110549c4c962fe">globalListen_on_click_function_set</a></td></tr>
+<tr class="separator:a212710b770d16da09b110549c4c962fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c3bba4b17cd5e19f149ea175fa6989" id="r_a59c3bba4b17cd5e19f149ea175fa6989"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59c3bba4b17cd5e19f149ea175fa6989">WIDTH</a></td></tr>
+<tr class="separator:a59c3bba4b17cd5e19f149ea175fa6989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e81322eb1085aca9cd7c5527f5e4c6b" id="r_a4e81322eb1085aca9cd7c5527f5e4c6b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e81322eb1085aca9cd7c5527f5e4c6b">HEIGHT</a></td></tr>
+<tr class="separator:a4e81322eb1085aca9cd7c5527f5e4c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c7261ff42d226889af6912aedcff5b" id="r_ae5c7261ff42d226889af6912aedcff5b"><td class="memItemLeft" align="right" valign="top">vector&lt; function&lt; void(void)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5c7261ff42d226889af6912aedcff5b">schedule</a></td></tr>
+<tr class="separator:ae5c7261ff42d226889af6912aedcff5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50704d2b04f7d0c66b4c41f1fc9534c9" id="r_a50704d2b04f7d0c66b4c41f1fc9534c9"><td class="memItemLeft" align="right" valign="top">map&lt; double, vector&lt; function&lt; void(void)&gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50704d2b04f7d0c66b4c41f1fc9534c9">schedule_timeOut</a></td></tr>
+<tr class="separator:a50704d2b04f7d0c66b4c41f1fc9534c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd04a0d85e97a7436534f02d287d25b7" id="r_afd04a0d85e97a7436534f02d287d25b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd04a0d85e97a7436534f02d287d25b7">__SIZE__</a> = 0</td></tr>
+<tr class="separator:afd04a0d85e97a7436534f02d287d25b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af824f9fffef1d5353416ea0cc466c47b" id="r_af824f9fffef1d5353416ea0cc466c47b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af824f9fffef1d5353416ea0cc466c47b">removesize</a> = 0</td></tr>
+<tr class="separator:af824f9fffef1d5353416ea0cc466c47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af01424a05c707cb11735312b6cc2b934" id="r_af01424a05c707cb11735312b6cc2b934"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af01424a05c707cb11735312b6cc2b934">closeGraph</a> = false</td></tr>
+<tr class="separator:af01424a05c707cb11735312b6cc2b934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff83570e66e504632fbb0df2f1e687f" id="r_abff83570e66e504632fbb0df2f1e687f"><td class="memItemLeft" align="right" valign="top">PIMAGE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abff83570e66e504632fbb0df2f1e687f">pen_image</a></td></tr>
+<tr class="separator:abff83570e66e504632fbb0df2f1e687f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9b2fb95db3309e4a5756ac2a72b821b" id="r_aa9b2fb95db3309e4a5756ac2a72b821b"><td class="memItemLeft" align="right" valign="top">unordered_map&lt; string, <a class="el" href="class_element.html">Element</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9b2fb95db3309e4a5756ac2a72b821b">IdToElement</a></td></tr>
+<tr class="separator:aa9b2fb95db3309e4a5756ac2a72b821b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa759965c38697c0eff98b46dfdfb35a3" id="r_aa759965c38697c0eff98b46dfdfb35a3"><td class="memItemLeft" align="right" valign="top">unordered_map&lt; <a class="el" href="class_element.html">Element</a> *, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa759965c38697c0eff98b46dfdfb35a3">ElementIsIn</a></td></tr>
+<tr class="separator:aa759965c38697c0eff98b46dfdfb35a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ec6f92a495370c0f26b5eec70af7a20" id="r_a7ec6f92a495370c0f26b5eec70af7a20"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_position.html">Position</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ec6f92a495370c0f26b5eec70af7a20">lastpixel</a></td></tr>
+<tr class="separator:a7ec6f92a495370c0f26b5eec70af7a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8470a4104a935f3d174bc796e6bd5e17" id="r_a8470a4104a935f3d174bc796e6bd5e17"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_position.html">Position</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8470a4104a935f3d174bc796e6bd5e17">mousePos</a></td></tr>
+<tr class="separator:a8470a4104a935f3d174bc796e6bd5e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2126ff4616cd9392dac81eac6767347" id="r_af2126ff4616cd9392dac81eac6767347"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_fe_e_g_e_1_1_events.html">Events</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_fe_e_g_e.html#af2126ff4616cd9392dac81eac6767347">FeEGE::EventType</a></td></tr>
+<tr class="separator:af2126ff4616cd9392dac81eac6767347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8fce440c746184705e31f494bb32ce" id="r_a2d8fce440c746184705e31f494bb32ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_fe_e_g_e_1_1_pen_types.html">PenTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_fe_e_g_e.html#a2d8fce440c746184705e31f494bb32ce">FeEGE::PenType</a></td></tr>
+<tr class="separator:a2d8fce440c746184705e31f494bb32ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa45b21371d960fcfc5375d0ab358f42d" id="r_aa45b21371d960fcfc5375d0ab358f42d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa45b21371d960fcfc5375d0ab358f42d">current_reg_order</a> = 0</td></tr>
+<tr class="separator:aa45b21371d960fcfc5375d0ab358f42d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada37c76444f56f4a8dd71f77f25a0b83" id="r_ada37c76444f56f4a8dd71f77f25a0b83"><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada37c76444f56f4a8dd71f77f25a0b83">frame</a> = 0</td></tr>
+<tr class="separator:ada37c76444f56f4a8dd71f77f25a0b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c10a11d95b467edbdc4c7aba75754c" id="r_a06c10a11d95b467edbdc4c7aba75754c"><td class="memItemLeft" align="right" valign="top">queue&lt; <a class="el" href="class_element.html">Element</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06c10a11d95b467edbdc4c7aba75754c">FreeList</a></td></tr>
+<tr class="separator:a06c10a11d95b467edbdc4c7aba75754c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f632ed1b64b3ec1e62a5f8a1137b0f3" id="r_a1f632ed1b64b3ec1e62a5f8a1137b0f3"><td class="memItemLeft" align="right" valign="top">set&lt; <a class="el" href="class_element.html">Element</a> *, <a class="el" href="classcmp.html">cmp</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f632ed1b64b3ec1e62a5f8a1137b0f3">Element_queue</a></td></tr>
+<tr class="separator:a1f632ed1b64b3ec1e62a5f8a1137b0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8799727fa866873d9b663c7f99b28596" id="r_a8799727fa866873d9b663c7f99b28596"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepen.html#a8799727fa866873d9b663c7f99b28596">pen::order</a> = 0</td></tr>
+<tr class="separator:a8799727fa866873d9b663c7f99b28596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9265cbe1b4dba9f9364c0169e15d25d2" id="r_a9265cbe1b4dba9f9364c0169e15d25d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepen.html#a9265cbe1b4dba9f9364c0169e15d25d2">pen::fontscale</a> = 1</td></tr>
+<tr class="separator:a9265cbe1b4dba9f9364c0169e15d25d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac62e33ec31aee0774923b4af8a86bb36" id="r_ac62e33ec31aee0774923b4af8a86bb36"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepen.html#ac62e33ec31aee0774923b4af8a86bb36">pen::penalpha</a> = 255</td></tr>
+<tr class="separator:ac62e33ec31aee0774923b4af8a86bb36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f7731203bd8645f184b1529731faae3" id="r_a7f7731203bd8645f184b1529731faae3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepen.html#a7f7731203bd8645f184b1529731faae3">pen::penType</a> = FeEGE::PenType.left</td></tr>
+<tr class="separator:a7f7731203bd8645f184b1529731faae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8797808c2c43abb23eabd2c620ed81d5" id="r_a8797808c2c43abb23eabd2c620ed81d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepen.html#a8797808c2c43abb23eabd2c620ed81d5">pen::charwidth</a></td></tr>
+<tr class="separator:a8797808c2c43abb23eabd2c620ed81d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63733f41782bc133a013e18f2809bb60" id="r_a63733f41782bc133a013e18f2809bb60"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepen.html#a63733f41782bc133a013e18f2809bb60">pen::charheight</a></td></tr>
+<tr class="separator:a63733f41782bc133a013e18f2809bb60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afba6db314acb225f40580d69afacabee" id="r_afba6db314acb225f40580d69afacabee"><td class="memItemLeft" align="right" valign="top">mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afba6db314acb225f40580d69afacabee">M</a></td></tr>
+<tr class="separator:afba6db314acb225f40580d69afacabee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9be440edfc4591932f46c5c4cd882371" id="r_a9be440edfc4591932f46c5c4cd882371"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_element.html">Element</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9be440edfc4591932f46c5c4cd882371">ElementPool</a> [<a class="el" href="#a4f9b1b85cdd0f3bde98282a1b2381005">MAXELEMENTCOUNT</a>]</td></tr>
+<tr class="separator:a9be440edfc4591932f46c5c4cd882371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa199859b5a579d7d70ba70d0a5c587" id="r_a9aa199859b5a579d7d70ba70d0a5c587"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9aa199859b5a579d7d70ba70d0a5c587">ElementPoolUsed</a> [<a class="el" href="#a4f9b1b85cdd0f3bde98282a1b2381005">MAXELEMENTCOUNT</a>] = {}</td></tr>
+<tr class="separator:a9aa199859b5a579d7d70ba70d0a5c587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><dl class="section author"><dt>作者</dt><dd>FeJS8888 (<a href="#" onclick="location.href='mai'+'lto:'+'fmx'+'fm'+'x20'+'07'+'@gm'+'ai'+'l.c'+'om'; return false;">fmxfm<span class="obfuscator">.nosp@m.</span>x200<span class="obfuscator">.nosp@m.</span>7@gma<span class="obfuscator">.nosp@m.</span>il.c<span class="obfuscator">.nosp@m.</span>om</a>,<a href="#" onclick="location.href='mai'+'lto:'+'fmx'+'fm'+'x20'+'07'+'@16'+'3.'+'com'; return false;">fmxfm<span class="obfuscator">.nosp@m.</span>x200<span class="obfuscator">.nosp@m.</span>7@163<span class="obfuscator">.nosp@m.</span>.com</a>) </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>V1.2.15.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2025-01-07</dd></dl>
+<dl class="section copyright"><dt>版权所有</dt><dd>MIT </dd></dl>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a6d9a467c72db0d6402a4ccdf86933878" name="a6d9a467c72db0d6402a4ccdf86933878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d9a467c72db0d6402a4ccdf86933878">&#9670;&#160;</a></span>FeEGELib_version</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FeEGELib_version&#160;&#160;&#160;&quot;V1.2.15.0--upd2025-01-07&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f6be9ac76a2e065e034c89f0cfe6763" name="a1f6be9ac76a2e065e034c89f0cfe6763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f6be9ac76a2e065e034c89f0cfe6763">&#9670;&#160;</a></span>initXY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define initXY</td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">{<a class="code hl_variable" href="#a59c3bba4b17cd5e19f149ea175fa6989">WIDTH</a> = getwidth();<a class="code hl_variable" href="#a4e81322eb1085aca9cd7c5527f5e4c6b">HEIGHT</a> = getheight();}</div>
+<div class="ttc" id="a_fe_e_g_e_lib_8h_html_a4e81322eb1085aca9cd7c5527f5e4c6b"><div class="ttname"><a href="#a4e81322eb1085aca9cd7c5527f5e4c6b">HEIGHT</a></div><div class="ttdeci">int HEIGHT</div><div class="ttdef"><b>定义</b> FeEGELib.h:75</div></div>
+<div class="ttc" id="a_fe_e_g_e_lib_8h_html_a59c3bba4b17cd5e19f149ea175fa6989"><div class="ttname"><a href="#a59c3bba4b17cd5e19f149ea175fa6989">WIDTH</a></div><div class="ttdeci">int WIDTH</div><div class="ttdef"><b>定义</b> FeEGELib.h:74</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a88efc8b48e041ff6182b56cde95f716b" name="a88efc8b48e041ff6182b56cde95f716b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88efc8b48e041ff6182b56cde95f716b">&#9670;&#160;</a></span>LeftButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LeftButton&#160;&#160;&#160;VK_LBUTTON</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25274c13d478263ec5322541d7bbfeee" name="a25274c13d478263ec5322541d7bbfeee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25274c13d478263ec5322541d7bbfeee">&#9670;&#160;</a></span>log</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define log&#160;&#160;&#160;printf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7837b82187f56db041c39b0913c5dfa5" name="a7837b82187f56db041c39b0913c5dfa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7837b82187f56db041c39b0913c5dfa5">&#9670;&#160;</a></span>MAXCLONESCOUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAXCLONESCOUNT&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f9b1b85cdd0f3bde98282a1b2381005" name="a4f9b1b85cdd0f3bde98282a1b2381005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f9b1b85cdd0f3bde98282a1b2381005">&#9670;&#160;</a></span>MAXELEMENTCOUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAXELEMENTCOUNT&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac40c2b49eb51e2adc237b530adfcadf4" name="ac40c2b49eb51e2adc237b530adfcadf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac40c2b49eb51e2adc237b530adfcadf4">&#9670;&#160;</a></span>PIE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIE&#160;&#160;&#160;3.141592653589793238462643383279502f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a79e63190ab37e5d6dafdd1eef5630f" name="a2a79e63190ab37e5d6dafdd1eef5630f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a79e63190ab37e5d6dafdd1eef5630f">&#9670;&#160;</a></span>version</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define version</td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a6d9a467c72db0d6402a4ccdf86933878">FeEGELib_version</a></div>
+<div class="ttc" id="a_fe_e_g_e_lib_8h_html_a6d9a467c72db0d6402a4ccdf86933878"><div class="ttname"><a href="#a6d9a467c72db0d6402a4ccdf86933878">FeEGELib_version</a></div><div class="ttdeci">#define FeEGELib_version</div><div class="ttdef"><b>定义</b> FeEGELib.h:14</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a207fd5507206d307cd63f95374fcd00d" name="a207fd5507206d307cd63f95374fcd00d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a207fd5507206d307cd63f95374fcd00d">&#9670;&#160;</a></span>X</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define X&#160;&#160;&#160;<a class="el" href="#a59c3bba4b17cd5e19f149ea175fa6989">WIDTH</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a798e4073d613ca5ba9618e1b3253df14" name="a798e4073d613ca5ba9618e1b3253df14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a798e4073d613ca5ba9618e1b3253df14">&#9670;&#160;</a></span>Y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Y&#160;&#160;&#160;<a class="el" href="#a4e81322eb1085aca9cd7c5527f5e4c6b">HEIGHT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="aee070a861cc0647e57b6549bec34d807" name="aee070a861cc0647e57b6549bec34d807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee070a861cc0647e57b6549bec34d807">&#9670;&#160;</a></span>globalListen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void globalListen </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>listen_mode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>identifier</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">auto</td>          <td class="paramname"><span class="paramname"><em>function</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listen_mode</td><td></td></tr>
+    <tr><td class="paramname">identifier</td><td></td></tr>
+    <tr><td class="paramname">function</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a909f4bd65ee24e59e188ae93c3e0e8c4" name="a909f4bd65ee24e59e188ae93c3e0e8c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a909f4bd65ee24e59e188ae93c3e0e8c4">&#9670;&#160;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td></td></tr>
+    <tr><td class="paramname">y</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afdd2b882d41d6ccbe23d0d9505b8ca62" name="afdd2b882d41d6ccbe23d0d9505b8ca62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdd2b882d41d6ccbe23d0d9505b8ca62">&#9670;&#160;</a></span>newButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_button.html">Button</a> * newButton </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>ImagePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">function&lt; void(<a class="el" href="class_element.html">Element</a> *)&gt;</td>          <td class="paramname"><span class="paramname"><em>put_on</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">function&lt; void(<a class="el" href="class_element.html">Element</a> *)&gt;</td>          <td class="paramname"><span class="paramname"><em>move_away</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">function&lt; void(<a class="el" href="class_element.html">Element</a> *)&gt;</td>          <td class="paramname"><span class="paramname"><em>on_click</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td></td></tr>
+    <tr><td class="paramname">ImagePath</td><td></td></tr>
+    <tr><td class="paramname">x</td><td></td></tr>
+    <tr><td class="paramname">y</td><td></td></tr>
+    <tr><td class="paramname">put_on</td><td></td></tr>
+    <tr><td class="paramname">move_away</td><td></td></tr>
+    <tr><td class="paramname">on_click</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Button* </dd></dl>
+
+</div>
+</div>
+<a id="a2601aa74302c0fa42d6b7a4e332104c0" name="a2601aa74302c0fa42d6b7a4e332104c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2601aa74302c0fa42d6b7a4e332104c0">&#9670;&#160;</a></span>newElement() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_element.html">Element</a> * newElement </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PIMAGE</td>          <td class="paramname"><span class="paramname"><em>image</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>x</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>y</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td></td></tr>
+    <tr><td class="paramname">image</td><td></td></tr>
+    <tr><td class="paramname">x</td><td></td></tr>
+    <tr><td class="paramname">y</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Element* </dd></dl>
+
+</div>
+</div>
+<a id="a54d815a3ea83a3c2b1669c3d0aab5b71" name="a54d815a3ea83a3c2b1669c3d0aab5b71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54d815a3ea83a3c2b1669c3d0aab5b71">&#9670;&#160;</a></span>newElement() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_element.html">Element</a> * newElement </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>ImagePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>x</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>y</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td></td></tr>
+    <tr><td class="paramname">ImagePath</td><td></td></tr>
+    <tr><td class="paramname">x</td><td></td></tr>
+    <tr><td class="paramname">y</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Element* </dd></dl>
+
+</div>
+</div>
+<a id="ac7f238a362fd3cc7b83d7289c4e10701" name="ac7f238a362fd3cc7b83d7289c4e10701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7f238a362fd3cc7b83d7289c4e10701">&#9670;&#160;</a></span>newInputBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_element.html">Element</a> * newInputBox </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>ImagePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_element.html">Element</a> *</td>          <td class="paramname"><span class="paramname"><em>submit_button</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">function&lt; void(<a class="el" href="class_element.html">Element</a> *)&gt;</td>          <td class="paramname"><span class="paramname"><em>on_submit</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">function&lt; void(<a class="el" href="class_element.html">Element</a> *)&gt;</td>          <td class="paramname"><span class="paramname"><em>on_selected</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td></td></tr>
+    <tr><td class="paramname">ImagePath</td><td></td></tr>
+    <tr><td class="paramname">x</td><td></td></tr>
+    <tr><td class="paramname">y</td><td></td></tr>
+    <tr><td class="paramname">submit_button</td><td></td></tr>
+    <tr><td class="paramname">on_submit</td><td></td></tr>
+    <tr><td class="paramname">on_selected</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Element* </dd></dl>
+
+</div>
+</div>
+<a id="a128952854ca90868b475af18eeb19bd7" name="a128952854ca90868b475af18eeb19bd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a128952854ca90868b475af18eeb19bd7">&#9670;&#160;</a></span>reflush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reflush </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae625c76239a79060894c09200fd45458" name="ae625c76239a79060894c09200fd45458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae625c76239a79060894c09200fd45458">&#9670;&#160;</a></span>reg_Element()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reg_Element </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_element.html">Element</a> *</td>          <td class="paramname"><span class="paramname"><em>element</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af0b83fec1f079fdfc6b271a65784da6a" name="af0b83fec1f079fdfc6b271a65784da6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0b83fec1f079fdfc6b271a65784da6a">&#9670;&#160;</a></span>SelectInputBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SelectInputBox </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_input_box.html">InputBox</a> *</td>          <td class="paramname"><span class="paramname"><em>inputBox</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inputBox</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2f12a64b87e6cf1be8360bbb056f8680" name="a2f12a64b87e6cf1be8360bbb056f8680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f12a64b87e6cf1be8360bbb056f8680">&#9670;&#160;</a></span>sgn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sgn </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a60de64d75454385b23995437f1d72669" name="a60de64d75454385b23995437f1d72669"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60de64d75454385b23995437f1d72669">&#9670;&#160;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void start </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f959a7bd72a9fc756149eb63c838e80" name="a6f959a7bd72a9fc756149eb63c838e80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f959a7bd72a9fc756149eb63c838e80">&#9670;&#160;</a></span>stopGlobalListen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stopGlobalListen </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>listen_mode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>identifier</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listen_mode</td><td></td></tr>
+    <tr><td class="paramname">identifier</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="afd04a0d85e97a7436534f02d287d25b7" name="afd04a0d85e97a7436534f02d287d25b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd04a0d85e97a7436534f02d287d25b7">&#9670;&#160;</a></span>__SIZE__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int __SIZE__ = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af01424a05c707cb11735312b6cc2b934" name="af01424a05c707cb11735312b6cc2b934"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af01424a05c707cb11735312b6cc2b934">&#9670;&#160;</a></span>closeGraph</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool closeGraph = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa45b21371d960fcfc5375d0ab358f42d" name="aa45b21371d960fcfc5375d0ab358f42d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa45b21371d960fcfc5375d0ab358f42d">&#9670;&#160;</a></span>current_reg_order</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int current_reg_order = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f632ed1b64b3ec1e62a5f8a1137b0f3" name="a1f632ed1b64b3ec1e62a5f8a1137b0f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f632ed1b64b3ec1e62a5f8a1137b0f3">&#9670;&#160;</a></span>Element_queue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">set&lt;<a class="el" href="class_element.html">Element</a>*,<a class="el" href="classcmp.html">cmp</a>&gt; Element_queue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa759965c38697c0eff98b46dfdfb35a3" name="aa759965c38697c0eff98b46dfdfb35a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa759965c38697c0eff98b46dfdfb35a3">&#9670;&#160;</a></span>ElementIsIn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unordered_map&lt;<a class="el" href="class_element.html">Element</a>*,bool&gt; ElementIsIn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9be440edfc4591932f46c5c4cd882371" name="a9be440edfc4591932f46c5c4cd882371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9be440edfc4591932f46c5c4cd882371">&#9670;&#160;</a></span>ElementPool</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_element.html">Element</a> ElementPool[<a class="el" href="#a4f9b1b85cdd0f3bde98282a1b2381005">MAXELEMENTCOUNT</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9aa199859b5a579d7d70ba70d0a5c587" name="a9aa199859b5a579d7d70ba70d0a5c587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aa199859b5a579d7d70ba70d0a5c587">&#9670;&#160;</a></span>ElementPoolUsed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ElementPoolUsed[<a class="el" href="#a4f9b1b85cdd0f3bde98282a1b2381005">MAXELEMENTCOUNT</a>] = {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d8c24629d725b9ef8c238cf27c9b158" name="a3d8c24629d725b9ef8c238cf27c9b158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d8c24629d725b9ef8c238cf27c9b158">&#9670;&#160;</a></span>eps</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double eps = 1e-7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada37c76444f56f4a8dd71f77f25a0b83" name="ada37c76444f56f4a8dd71f77f25a0b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada37c76444f56f4a8dd71f77f25a0b83">&#9670;&#160;</a></span>frame</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long long frame = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06c10a11d95b467edbdc4c7aba75754c" name="a06c10a11d95b467edbdc4c7aba75754c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06c10a11d95b467edbdc4c7aba75754c">&#9670;&#160;</a></span>FreeList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">queue&lt;<a class="el" href="class_element.html">Element</a>*&gt; FreeList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a40489e4ca16505489bd0507204ac4320" name="a40489e4ca16505489bd0507204ac4320"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40489e4ca16505489bd0507204ac4320">&#9670;&#160;</a></span>globalListen_frame_function_set</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt;string,function&lt;void(void)&gt; &gt; globalListen_frame_function_set</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a212710b770d16da09b110549c4c962fe" name="a212710b770d16da09b110549c4c962fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a212710b770d16da09b110549c4c962fe">&#9670;&#160;</a></span>globalListen_on_click_function_set</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt;string,function&lt;void(void)&gt; &gt; globalListen_on_click_function_set</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf178c0d4fd43d942a79cab670f6c4a6" name="acf178c0d4fd43d942a79cab670f6c4a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf178c0d4fd43d942a79cab670f6c4a6">&#9670;&#160;</a></span>GlobalRating</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GlobalRating = 1.00f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e81322eb1085aca9cd7c5527f5e4c6b" name="a4e81322eb1085aca9cd7c5527f5e4c6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e81322eb1085aca9cd7c5527f5e4c6b">&#9670;&#160;</a></span>HEIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HEIGHT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa9b2fb95db3309e4a5756ac2a72b821b" name="aa9b2fb95db3309e4a5756ac2a72b821b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9b2fb95db3309e4a5756ac2a72b821b">&#9670;&#160;</a></span>IdToElement</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unordered_map&lt;string,<a class="el" href="class_element.html">Element</a>*&gt; IdToElement</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8eec6ab31f0b4dafbbbfef9c26376e2" name="ae8eec6ab31f0b4dafbbbfef9c26376e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8eec6ab31f0b4dafbbbfef9c26376e2">&#9670;&#160;</a></span>iskey</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool iskey = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adeefe5fe064a6fbe3be9afcce7734fad" name="adeefe5fe064a6fbe3be9afcce7734fad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeefe5fe064a6fbe3be9afcce7734fad">&#9670;&#160;</a></span>keymsg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">key_msg keymsg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a227fd4440811d6d09a4c24737ec772f9" name="a227fd4440811d6d09a4c24737ec772f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a227fd4440811d6d09a4c24737ec772f9">&#9670;&#160;</a></span>keystatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool keystatus[360]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ec6f92a495370c0f26b5eec70af7a20" name="a7ec6f92a495370c0f26b5eec70af7a20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ec6f92a495370c0f26b5eec70af7a20">&#9670;&#160;</a></span>lastpixel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">class <a class="el" href="class_position.html">Position</a> lastpixel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afba6db314acb225f40580d69afacabee" name="afba6db314acb225f40580d69afacabee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afba6db314acb225f40580d69afacabee">&#9670;&#160;</a></span>M</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mutex M</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f39f419f621b9148e75a34075b7a891" name="a0f39f419f621b9148e75a34075b7a891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f39f419f621b9148e75a34075b7a891">&#9670;&#160;</a></span>mousehit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mousehit = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5692ef595aa8879829a4e2e9dded9bb5" name="a5692ef595aa8879829a4e2e9dded9bb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5692ef595aa8879829a4e2e9dded9bb5">&#9670;&#160;</a></span>mouseinfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mouse_msg mouseinfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8470a4104a935f3d174bc796e6bd5e17" name="a8470a4104a935f3d174bc796e6bd5e17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8470a4104a935f3d174bc796e6bd5e17">&#9670;&#160;</a></span>mousePos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">class <a class="el" href="class_position.html">Position</a> mousePos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a17b4309595c1f66709998c0cd3c38b21" name="a17b4309595c1f66709998c0cd3c38b21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17b4309595c1f66709998c0cd3c38b21">&#9670;&#160;</a></span>needsort</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool needsort = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abff83570e66e504632fbb0df2f1e687f" name="abff83570e66e504632fbb0df2f1e687f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abff83570e66e504632fbb0df2f1e687f">&#9670;&#160;</a></span>pen_image</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PIMAGE pen_image</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2bc93499a3b1b40d903f22185a754405" name="a2bc93499a3b1b40d903f22185a754405"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bc93499a3b1b40d903f22185a754405">&#9670;&#160;</a></span>reg_pause</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool reg_pause = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af824f9fffef1d5353416ea0cc466c47b" name="af824f9fffef1d5353416ea0cc466c47b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af824f9fffef1d5353416ea0cc466c47b">&#9670;&#160;</a></span>removesize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int removesize = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae5c7261ff42d226889af6912aedcff5b" name="ae5c7261ff42d226889af6912aedcff5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c7261ff42d226889af6912aedcff5b">&#9670;&#160;</a></span>schedule</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;function&lt;void(void)&gt; &gt; schedule</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a50704d2b04f7d0c66b4c41f1fc9534c9" name="a50704d2b04f7d0c66b4c41f1fc9534c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50704d2b04f7d0c66b4c41f1fc9534c9">&#9670;&#160;</a></span>schedule_timeOut</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt;double,vector&lt;function&lt;void(void)&gt; &gt; &gt; schedule_timeOut</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59c3bba4b17cd5e19f149ea175fa6989" name="a59c3bba4b17cd5e19f149ea175fa6989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59c3bba4b17cd5e19f149ea175fa6989">&#9670;&#160;</a></span>WIDTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WIDTH</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_fe_e_g_e_lib_8h.html">FeEGELib.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1 </li>
+  </ul>
+</div>
+</body>
+</html>

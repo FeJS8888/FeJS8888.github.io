@@ -1,0 +1,223 @@
+\doxysection{Fe\+EGE 命名空间参考}
+\hypertarget{namespace_fe_e_g_e}{}\label{namespace_fe_e_g_e}\index{FeEGE@{FeEGE}}
+
+
+\doxylink{namespace_fe_e_g_e}{Fe\+EGE} 主命名空间  
+
+
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_fe_e_g_e_1_1_clones_events}{Clones\+Events}}
+\begin{DoxyCompactList}\small\item\em 克隆体事件 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_fe_e_g_e_1_1_events}{Events}}
+\item 
+class \mbox{\hyperlink{class_fe_e_g_e_1_1_input_box_event}{Input\+Box\+Event}}
+\begin{DoxyCompactList}\small\item\em 输入框事件 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_fe_e_g_e_1_1_pen_types}{Pen\+Types}}
+\begin{DoxyCompactList}\small\item\em 画笔对齐属性 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespace_fe_e_g_e_a2ce32897f9939a7d33523fa0a4b21465}{getkey}} (int VK)
+\begin{DoxyCompactList}\small\item\em 这个函数用于获取某个按键的状态 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_fe_e_g_e_afa4541df67729f58a2c738e37d528595}{enable\+\_\+pause}} ()
+\begin{DoxyCompactList}\small\item\em 允许暂停 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_fe_e_g_e_ab7fba763f716594b10d43d2c1a860c7e}{disable\+\_\+pause}} ()
+\begin{DoxyCompactList}\small\item\em 不允许暂停 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_fe_e_g_e_a3a01853f417615e2df58fa656a4a7830}{get\+Element\+By\+Id}} (string)
+\item 
+\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_fe_e_g_e_a18f8569a97cca615b464f860b0f98549}{get\+Element\+By\+Ptr}} (\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{namespace_fe_e_g_e_a560ed97d6c8d16b73f99628ab46c3bba}{initpen}} ()
+\begin{DoxyCompactList}\small\item\em 初始化画笔，此方法在 init 方法中会被调用一次，无需手动调用 \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_fe_e_g_e_a1d286e9dc63cbf315d437de5dbd4d8e9}{get\+Ms}} ()
+\begin{DoxyCompactList}\small\item\em 获取当前系统时间（精确到毫秒） \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_fe_e_g_e_a686186d00b182cdc464d87e6648ac921}{push\+\_\+schedule}} (function$<$ void(void)$>$ func)
+\begin{DoxyCompactList}\small\item\em 在下一帧安排一个任务 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_fe_e_g_e_a0d9dc0b518a0979a642c5fc99035e3c2}{set\+Time\+Out}} (function$<$ void(void)$>$ func, double time\+\_\+ms)
+\begin{DoxyCompactList}\small\item\em 设置延时调用某个任务 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_position}{Position}} \& \mbox{\hyperlink{namespace_fe_e_g_e_a1d5a2e74125a3c8894bfd40fea649b05}{get\+Last\+Pixel}} ()
+\begin{DoxyCompactList}\small\item\em 获取系统最后一次的像素（通常为 \doxylink{class_element_a85b13e33ad8f9032bc06ba0c72171fb2}{Element\+::is\+\_\+touched\+\_\+by} 方法调用后获取碰撞像素之一） \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_position}{Position}} \& \mbox{\hyperlink{namespace_fe_e_g_e_a526ec118ca1e436d18b38bc42b44eb8c}{get\+Mouse\+Pos}} ()
+\begin{DoxyCompactList}\small\item\em 获取鼠标像素 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fe_e_g_e_1_1_events}{Events}} \mbox{\hyperlink{namespace_fe_e_g_e_af2126ff4616cd9392dac81eac6767347}{Event\+Type}}
+\item 
+\mbox{\hyperlink{class_fe_e_g_e_1_1_pen_types}{Pen\+Types}} \mbox{\hyperlink{namespace_fe_e_g_e_a2d8fce440c746184705e31f494bb32ce}{Pen\+Type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\doxylink{namespace_fe_e_g_e}{Fe\+EGE} 主命名空间 
+
+\doxysubsection{函数说明}
+\Hypertarget{namespace_fe_e_g_e_ab7fba763f716594b10d43d2c1a860c7e}\index{FeEGE@{FeEGE}!disable\_pause@{disable\_pause}}
+\index{disable\_pause@{disable\_pause}!FeEGE@{FeEGE}}
+\doxysubsubsection{\texorpdfstring{disable\_pause()}{disable\_pause()}}
+{\footnotesize\ttfamily \label{namespace_fe_e_g_e_ab7fba763f716594b10d43d2c1a860c7e} 
+void Fe\+EGE\+::disable\+\_\+pause (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+不允许暂停 
+
+\Hypertarget{namespace_fe_e_g_e_afa4541df67729f58a2c738e37d528595}\index{FeEGE@{FeEGE}!enable\_pause@{enable\_pause}}
+\index{enable\_pause@{enable\_pause}!FeEGE@{FeEGE}}
+\doxysubsubsection{\texorpdfstring{enable\_pause()}{enable\_pause()}}
+{\footnotesize\ttfamily \label{namespace_fe_e_g_e_afa4541df67729f58a2c738e37d528595} 
+void Fe\+EGE\+::enable\+\_\+pause (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+允许暂停 
+
+\Hypertarget{namespace_fe_e_g_e_a3a01853f417615e2df58fa656a4a7830}\index{FeEGE@{FeEGE}!getElementById@{getElementById}}
+\index{getElementById@{getElementById}!FeEGE@{FeEGE}}
+\doxysubsubsection{\texorpdfstring{getElementById()}{getElementById()}}
+{\footnotesize\ttfamily \label{namespace_fe_e_g_e_a3a01853f417615e2df58fa656a4a7830} 
+\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*} Fe\+EGE\+::get\+Element\+By\+Id (\begin{DoxyParamCaption}\item[{string}]{Element\+Id}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{参数}
+{\em Element\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Element\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+\Hypertarget{namespace_fe_e_g_e_a18f8569a97cca615b464f860b0f98549}\index{FeEGE@{FeEGE}!getElementByPtr@{getElementByPtr}}
+\index{getElementByPtr@{getElementByPtr}!FeEGE@{FeEGE}}
+\doxysubsubsection{\texorpdfstring{getElementByPtr()}{getElementByPtr()}}
+{\footnotesize\ttfamily \label{namespace_fe_e_g_e_a18f8569a97cca615b464f860b0f98549} 
+\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*} Fe\+EGE\+::get\+Element\+By\+Ptr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*}}]{Element\+Ptr}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{参数}
+{\em Element\+Ptr} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Element\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+\Hypertarget{namespace_fe_e_g_e_a2ce32897f9939a7d33523fa0a4b21465}\index{FeEGE@{FeEGE}!getkey@{getkey}}
+\index{getkey@{getkey}!FeEGE@{FeEGE}}
+\doxysubsubsection{\texorpdfstring{getkey()}{getkey()}}
+{\footnotesize\ttfamily \label{namespace_fe_e_g_e_a2ce32897f9939a7d33523fa0a4b21465} 
+bool Fe\+EGE\+::getkey (\begin{DoxyParamCaption}\item[{int}]{VK}{}\end{DoxyParamCaption})}
+
+
+
+这个函数用于获取某个按键的状态 
+
+
+\begin{DoxyParams}{参数}
+{\em VK} & 虚拟键码，常见 ASCII 字符用 ASCII 替代即可 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+true 表示正在被按住 
+
+false 表示未正在被按住 
+\end{DoxyReturn}
+\Hypertarget{namespace_fe_e_g_e_a1d5a2e74125a3c8894bfd40fea649b05}\index{FeEGE@{FeEGE}!getLastPixel@{getLastPixel}}
+\index{getLastPixel@{getLastPixel}!FeEGE@{FeEGE}}
+\doxysubsubsection{\texorpdfstring{getLastPixel()}{getLastPixel()}}
+{\footnotesize\ttfamily \label{namespace_fe_e_g_e_a1d5a2e74125a3c8894bfd40fea649b05} 
+\mbox{\hyperlink{class_position}{Position}} \& Fe\+EGE\+::get\+Last\+Pixel (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+获取系统最后一次的像素（通常为 \doxylink{class_element_a85b13e33ad8f9032bc06ba0c72171fb2}{Element\+::is\+\_\+touched\+\_\+by} 方法调用后获取碰撞像素之一） 
+
+\begin{DoxyReturn}{返回}
+\doxylink{class_position}{Position}\& 像素坐标 
+\end{DoxyReturn}
+\Hypertarget{namespace_fe_e_g_e_a526ec118ca1e436d18b38bc42b44eb8c}\index{FeEGE@{FeEGE}!getMousePos@{getMousePos}}
+\index{getMousePos@{getMousePos}!FeEGE@{FeEGE}}
+\doxysubsubsection{\texorpdfstring{getMousePos()}{getMousePos()}}
+{\footnotesize\ttfamily \label{namespace_fe_e_g_e_a526ec118ca1e436d18b38bc42b44eb8c} 
+\mbox{\hyperlink{class_position}{Position}} \& Fe\+EGE\+::get\+Mouse\+Pos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+获取鼠标像素 
+
+\begin{DoxyWarning}{警告}
+如果你想要获取当前的鼠标位置，你应调用此方法而不是使用 Windows API 以避免同一帧内的鼠标位置不同引发的异常
+\end{DoxyWarning}
+\begin{DoxyReturn}{返回}
+\doxylink{class_position}{Position}\& 鼠标坐标 
+\end{DoxyReturn}
+\Hypertarget{namespace_fe_e_g_e_a1d286e9dc63cbf315d437de5dbd4d8e9}\index{FeEGE@{FeEGE}!getMs@{getMs}}
+\index{getMs@{getMs}!FeEGE@{FeEGE}}
+\doxysubsubsection{\texorpdfstring{getMs()}{getMs()}}
+{\footnotesize\ttfamily \label{namespace_fe_e_g_e_a1d286e9dc63cbf315d437de5dbd4d8e9} 
+double Fe\+EGE\+::get\+Ms (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+获取当前系统时间（精确到毫秒） 
+
+\begin{DoxyReturn}{返回}
+double 当前系统时间（精确到毫秒） 
+\end{DoxyReturn}
+\Hypertarget{namespace_fe_e_g_e_a560ed97d6c8d16b73f99628ab46c3bba}\index{FeEGE@{FeEGE}!initpen@{initpen}}
+\index{initpen@{initpen}!FeEGE@{FeEGE}}
+\doxysubsubsection{\texorpdfstring{initpen()}{initpen()}}
+{\footnotesize\ttfamily \label{namespace_fe_e_g_e_a560ed97d6c8d16b73f99628ab46c3bba} 
+void Fe\+EGE\+::initpen (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+初始化画笔，此方法在 init 方法中会被调用一次，无需手动调用 
+
+\Hypertarget{namespace_fe_e_g_e_a686186d00b182cdc464d87e6648ac921}\index{FeEGE@{FeEGE}!push\_schedule@{push\_schedule}}
+\index{push\_schedule@{push\_schedule}!FeEGE@{FeEGE}}
+\doxysubsubsection{\texorpdfstring{push\_schedule()}{push\_schedule()}}
+{\footnotesize\ttfamily \label{namespace_fe_e_g_e_a686186d00b182cdc464d87e6648ac921} 
+void Fe\+EGE\+::push\+\_\+schedule (\begin{DoxyParamCaption}\item[{function$<$ void(void)$>$}]{func}{}\end{DoxyParamCaption})}
+
+
+
+在下一帧安排一个任务 
+
+
+\begin{DoxyParams}{参数}
+{\em func} & 安排的任务函数 \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_fe_e_g_e_a0d9dc0b518a0979a642c5fc99035e3c2}\index{FeEGE@{FeEGE}!setTimeOut@{setTimeOut}}
+\index{setTimeOut@{setTimeOut}!FeEGE@{FeEGE}}
+\doxysubsubsection{\texorpdfstring{setTimeOut()}{setTimeOut()}}
+{\footnotesize\ttfamily \label{namespace_fe_e_g_e_a0d9dc0b518a0979a642c5fc99035e3c2} 
+void Fe\+EGE\+::set\+Time\+Out (\begin{DoxyParamCaption}\item[{function$<$ void(void)$>$}]{func}{, }\item[{double}]{time\+\_\+ms}{}\end{DoxyParamCaption})}
+
+
+
+设置延时调用某个任务 
+
+
+\begin{DoxyParams}{参数}
+{\em func} & 安排的任务函数 \\
+\hline
+{\em time\+\_\+ms} & 延时时长 \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{变量说明}
+\Hypertarget{namespace_fe_e_g_e_af2126ff4616cd9392dac81eac6767347}\index{FeEGE@{FeEGE}!EventType@{EventType}}
+\index{EventType@{EventType}!FeEGE@{FeEGE}}
+\doxysubsubsection{\texorpdfstring{EventType}{EventType}}
+{\footnotesize\ttfamily \label{namespace_fe_e_g_e_af2126ff4616cd9392dac81eac6767347} 
+\mbox{\hyperlink{class_fe_e_g_e_1_1_events}{Events}} Fe\+EGE\+::\+Event\+Type}
+
+\Hypertarget{namespace_fe_e_g_e_a2d8fce440c746184705e31f494bb32ce}\index{FeEGE@{FeEGE}!PenType@{PenType}}
+\index{PenType@{PenType}!FeEGE@{FeEGE}}
+\doxysubsubsection{\texorpdfstring{PenType}{PenType}}
+{\footnotesize\ttfamily \label{namespace_fe_e_g_e_a2d8fce440c746184705e31f494bb32ce} 
+\mbox{\hyperlink{class_fe_e_g_e_1_1_pen_types}{Pen\+Types}} Fe\+EGE\+::\+Pen\+Type}
+

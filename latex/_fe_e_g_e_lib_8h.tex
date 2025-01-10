@@ -1,0 +1,689 @@
+\doxysection{Fe\+EGELib.\+h 文件参考}
+\hypertarget{_fe_e_g_e_lib_8h}{}\label{_fe_e_g_e_lib_8h}\index{FeEGELib.h@{FeEGELib.h}}
+{\ttfamily \#include $<$graphics.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$malloc.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_position}{Position}}
+\item 
+class \mbox{\hyperlink{class_fe_e_g_e_1_1_clones_events}{Fe\+EGE\+::\+Clones\+Events}}
+\begin{DoxyCompactList}\small\item\em 克隆体事件 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_fe_e_g_e_1_1_input_box_event}{Fe\+EGE\+::\+Input\+Box\+Event}}
+\begin{DoxyCompactList}\small\item\em 输入框事件 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_fe_e_g_e_1_1_events}{Fe\+EGE\+::\+Events}}
+\item 
+class \mbox{\hyperlink{class_fe_e_g_e_1_1_pen_types}{Fe\+EGE\+::\+Pen\+Types}}
+\begin{DoxyCompactList}\small\item\em 画笔对齐属性 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_animate}{Animate}}
+\item 
+class \mbox{\hyperlink{class_element}{Element}}
+\item 
+class \mbox{\hyperlink{class_input_box_set}{Input\+Box\+Set}}
+\item 
+class \mbox{\hyperlink{class_input_box}{Input\+Box}}
+\item 
+class \mbox{\hyperlink{class_button}{Button}}
+\item 
+class \mbox{\hyperlink{classcmp}{cmp}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_fe_e_g_e}{Fe\+EGE}}
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_fe_e_g_e}{Fe\+EGE} 主命名空间 \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_ease}{Ease}}
+\item 
+namespace \mbox{\hyperlink{namespacepen}{pen}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_fe_e_g_e_lib_8h_a6d9a467c72db0d6402a4ccdf86933878}{Fe\+EGELib\+\_\+version}}~"{}V1.\+2.\+15.\+0-\/-\/upd2025-\/01-\/07"{}
+\item 
+\#define \mbox{\hyperlink{_fe_e_g_e_lib_8h_a2a79e63190ab37e5d6dafdd1eef5630f}{version}}()
+\item 
+\#define \mbox{\hyperlink{_fe_e_g_e_lib_8h_a7837b82187f56db041c39b0913c5dfa5}{MAXCLONESCOUNT}}~100
+\item 
+\#define \mbox{\hyperlink{_fe_e_g_e_lib_8h_a4f9b1b85cdd0f3bde98282a1b2381005}{MAXELEMENTCOUNT}}~100
+\item 
+\#define \mbox{\hyperlink{_fe_e_g_e_lib_8h_a88efc8b48e041ff6182b56cde95f716b}{Left\+Button}}~VK\+\_\+\+LBUTTON
+\item 
+\#define \mbox{\hyperlink{_fe_e_g_e_lib_8h_a25274c13d478263ec5322541d7bbfeee}{log}}~printf
+\item 
+\#define \mbox{\hyperlink{_fe_e_g_e_lib_8h_ac40c2b49eb51e2adc237b530adfcadf4}{PIE}}~3.\+141592653589793238462643383279502f
+\item 
+\#define \mbox{\hyperlink{_fe_e_g_e_lib_8h_a1f6be9ac76a2e065e034c89f0cfe6763}{init\+XY}}()
+\item 
+\#define \mbox{\hyperlink{_fe_e_g_e_lib_8h_a207fd5507206d307cd63f95374fcd00d}{X}}~\mbox{\hyperlink{_fe_e_g_e_lib_8h_a59c3bba4b17cd5e19f149ea175fa6989}{WIDTH}}
+\item 
+\#define \mbox{\hyperlink{_fe_e_g_e_lib_8h_a798e4073d613ca5ba9618e1b3253df14}{Y}}~\mbox{\hyperlink{_fe_e_g_e_lib_8h_a4e81322eb1085aca9cd7c5527f5e4c6b}{HEIGHT}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_fe_e_g_e_lib_8h_ae625c76239a79060894c09200fd45458}{reg\+\_\+\+Element}} (\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*}element)
+\item 
+\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_fe_e_g_e_lib_8h_a2601aa74302c0fa42d6b7a4e332104c0}{new\+Element}} (string, PIMAGE, double, double)
+\item 
+\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_fe_e_g_e_lib_8h_a54d815a3ea83a3c2b1669c3d0aab5b71}{new\+Element}} (string, string, double, double)
+\item 
+int \mbox{\hyperlink{_fe_e_g_e_lib_8h_a2f12a64b87e6cf1be8360bbb056f8680}{sgn}} (double x)
+\item 
+bool \mbox{\hyperlink{namespace_fe_e_g_e_a2ce32897f9939a7d33523fa0a4b21465}{Fe\+EGE\+::getkey}} (int VK)
+\begin{DoxyCompactList}\small\item\em 这个函数用于获取某个按键的状态 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_fe_e_g_e_afa4541df67729f58a2c738e37d528595}{Fe\+EGE\+::enable\+\_\+pause}} ()
+\begin{DoxyCompactList}\small\item\em 允许暂停 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_fe_e_g_e_ab7fba763f716594b10d43d2c1a860c7e}{Fe\+EGE\+::disable\+\_\+pause}} ()
+\begin{DoxyCompactList}\small\item\em 不允许暂停 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_fe_e_g_e_a3a01853f417615e2df58fa656a4a7830}{Fe\+EGE\+::get\+Element\+By\+Id}} (string)
+\item 
+\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_fe_e_g_e_a18f8569a97cca615b464f860b0f98549}{Fe\+EGE\+::get\+Element\+By\+Ptr}} (\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{namespace_fe_e_g_e_a560ed97d6c8d16b73f99628ab46c3bba}{Fe\+EGE\+::initpen}} ()
+\begin{DoxyCompactList}\small\item\em 初始化画笔，此方法在 init 方法中会被调用一次，无需手动调用 \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespace_fe_e_g_e_a1d286e9dc63cbf315d437de5dbd4d8e9}{Fe\+EGE\+::get\+Ms}} ()
+\begin{DoxyCompactList}\small\item\em 获取当前系统时间（精确到毫秒） \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_fe_e_g_e_a686186d00b182cdc464d87e6648ac921}{Fe\+EGE\+::push\+\_\+schedule}} (function$<$ void(void)$>$ func)
+\begin{DoxyCompactList}\small\item\em 在下一帧安排一个任务 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_fe_e_g_e_a0d9dc0b518a0979a642c5fc99035e3c2}{Fe\+EGE\+::set\+Time\+Out}} (function$<$ void(void)$>$ func, double time\+\_\+ms)
+\begin{DoxyCompactList}\small\item\em 设置延时调用某个任务 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_position}{Position}} \& \mbox{\hyperlink{namespace_fe_e_g_e_a1d5a2e74125a3c8894bfd40fea649b05}{Fe\+EGE\+::get\+Last\+Pixel}} ()
+\begin{DoxyCompactList}\small\item\em 获取系统最后一次的像素（通常为 \doxylink{class_element_a85b13e33ad8f9032bc06ba0c72171fb2}{Element\+::is\+\_\+touched\+\_\+by} 方法调用后获取碰撞像素之一） \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_position}{Position}} \& \mbox{\hyperlink{namespace_fe_e_g_e_a526ec118ca1e436d18b38bc42b44eb8c}{Fe\+EGE\+::get\+Mouse\+Pos}} ()
+\begin{DoxyCompactList}\small\item\em 获取鼠标像素 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_animate}{Animate}} \mbox{\hyperlink{namespace_ease_ac9196715821fb681169b01fe3e12eda2}{Ease\+::\+Ease\+In\+Out\+CubicX}} (\mbox{[}\&\mbox{]}(double tick) -\/$>$ \mbox{\hyperlink{class_position}{Position}} \{ return \{tick$<$=0.\+5 ? 4 \texorpdfstring{$\ast$}{*}tick \texorpdfstring{$\ast$}{*}tick \texorpdfstring{$\ast$}{*}tick \+:1 -\/ pow(-\/2 \texorpdfstring{$\ast$}{*}tick+2, 3)/2, 0\};\}, 0.\+002, 1)
+\item 
+\mbox{\hyperlink{class_animate}{Animate}} \mbox{\hyperlink{namespace_ease_a54406fc28c341d05223d09edebd8eb91}{Ease\+::\+Ease\+In\+Out\+CubicY}} (\mbox{[}\&\mbox{]}(double tick) -\/$>$ \mbox{\hyperlink{class_position}{Position}} \{ return \{0, tick$<$=0.\+5 ? 4 \texorpdfstring{$\ast$}{*}tick \texorpdfstring{$\ast$}{*}tick \texorpdfstring{$\ast$}{*}tick \+:1 -\/ pow(-\/2 \texorpdfstring{$\ast$}{*}tick+2, 3)/2\};\}, 0.\+002, 1)
+\item 
+\mbox{\hyperlink{class_animate}{Animate}} \mbox{\hyperlink{namespace_ease_a23d9283ee9006b8ebb10205fad34e1ea}{Ease\+::\+Ease\+Out\+QuadX}} (\mbox{[}\&\mbox{]}(double tick) -\/$>$ \mbox{\hyperlink{class_position}{Position}} \{ return \{1 -\/(1 -\/ tick) \texorpdfstring{$\ast$}{*}(1 -\/ tick), 0\};\}, 0.\+002, 1)
+\item 
+\mbox{\hyperlink{class_animate}{Animate}} \mbox{\hyperlink{namespace_ease_a7a76f58f83f3397dc87a408a190e6499}{Ease\+::\+Ease\+Out\+QuadY}} (\mbox{[}\&\mbox{]}(double tick) -\/$>$ \mbox{\hyperlink{class_position}{Position}} \{ return \{0, 1 -\/(1 -\/ tick) \texorpdfstring{$\ast$}{*}(1 -\/ tick)\};\}, 0.\+002, 1)
+\item 
+void \mbox{\hyperlink{namespacepen_af21f98f6892484de88e82dafb9c3dcb4}{pen\+::print}} (int x, int y, string str)
+\item 
+void \mbox{\hyperlink{namespacepen_a339810646a2cd2e80812098cc23a5041}{pen\+::font}} (int scale, string fontname="{}幼圆"{})
+\item 
+void \mbox{\hyperlink{namespacepen_a88271090d2463068d7854c80354893ac}{pen\+::color}} (color\+\_\+t color)
+\item 
+void \mbox{\hyperlink{namespacepen_a9982fd2a4cb7ea1ca34f499ba2b494d2}{pen\+::type}} (int Type)
+\item 
+void \mbox{\hyperlink{namespacepen_a767f11f46c0f272682525f8a5e97871c}{pen\+::clear}} (int x, int y, int ex, int ey)
+\item 
+void \mbox{\hyperlink{namespacepen_ae647d6f2d35e3431299164e697a60006}{pen\+::clear\+\_\+char}} (int x, int y)
+\item 
+void \mbox{\hyperlink{namespacepen_ae93240d304cd0e92fd3642bda9445a95}{pen\+::clear\+\_\+chars}} (int x, int y, int charcount)
+\item 
+void \mbox{\hyperlink{namespacepen_ad0757e801d0040f9ed378b7f661feff2}{pen\+::clear\+\_\+all}} ()
+\item 
+void \mbox{\hyperlink{namespacepen_af4f35847e05a1b6840687c499ccd7afb}{pen\+::setorder}} (int value)
+\item 
+void \mbox{\hyperlink{namespacepen_abc961a44d6e85bf08693bcd2a94832f5}{pen\+::set\+\_\+alpha}} (short alpha)
+\begin{DoxyCompactList}\small\item\em Set the alpha object \end{DoxyCompactList}\item 
+short \mbox{\hyperlink{namespacepen_ab26f4b037799811280cf6e9dc7f96c43}{pen\+::get\+\_\+alpha}} ()
+\begin{DoxyCompactList}\small\item\em Get the alpha object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacepen_ae1d29a4e893b90719aff70133e717e45}{pen\+::increase\+\_\+alpha}} (short alpha)
+\item 
+void \mbox{\hyperlink{namespacepen_a14bd6fd739ef8ffa3838fb87b16da354}{pen\+::decrease\+\_\+alpha}} (short alpha)
+\item 
+void \mbox{\hyperlink{namespacepen_a1080385ddb434e09e11b1f2b3de8fa2e}{pen\+::print\+\_\+line}} (int x1, int y1, int x2, int y2)
+\item 
+void \mbox{\hyperlink{namespacepen_acfa93af76f94f7498967cbe7af30678f}{pen\+::print\+\_\+bar}} (int left, int top, int right, int bottom)
+\item 
+\mbox{\hyperlink{class_button}{Button}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_fe_e_g_e_lib_8h_afdd2b882d41d6ccbe23d0d9505b8ca62}{new\+Button}} (string id, string Image\+Path, double x, double y, function$<$ void(\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*})$>$ put\+\_\+on=nullptr, function$<$ void(\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*})$>$ move\+\_\+away=nullptr, function$<$ void(\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*})$>$ on\+\_\+click=nullptr)
+\item 
+void \mbox{\hyperlink{_fe_e_g_e_lib_8h_af0b83fec1f079fdfc6b271a65784da6a}{Select\+Input\+Box}} (\mbox{\hyperlink{class_input_box}{Input\+Box}} \texorpdfstring{$\ast$}{*}input\+Box)
+\item 
+\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_fe_e_g_e_lib_8h_ac7f238a362fd3cc7b83d7289c4e10701}{new\+Input\+Box}} (string id, string Image\+Path, double x, double y, \mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*}submit\+\_\+button, function$<$ void(\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*})$>$ on\+\_\+submit=nullptr, function$<$ void(\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*})$>$ on\+\_\+selected=nullptr)
+\item 
+void \mbox{\hyperlink{_fe_e_g_e_lib_8h_aee070a861cc0647e57b6549bec34d807}{global\+Listen}} (int listen\+\_\+mode, string identifier, auto function)
+\item 
+void \mbox{\hyperlink{_fe_e_g_e_lib_8h_a6f959a7bd72a9fc756149eb63c838e80}{stop\+Global\+Listen}} (int listen\+\_\+mode, string identifier)
+\item 
+void \mbox{\hyperlink{_fe_e_g_e_lib_8h_a128952854ca90868b475af18eeb19bd7}{reflush}} ()
+\item 
+void \mbox{\hyperlink{_fe_e_g_e_lib_8h_a909f4bd65ee24e59e188ae93c3e0e8c4}{init}} (int x, int y)
+\item 
+void \mbox{\hyperlink{_fe_e_g_e_lib_8h_a60de64d75454385b23995437f1d72669}{start}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+const double \mbox{\hyperlink{_fe_e_g_e_lib_8h_a3d8c24629d725b9ef8c238cf27c9b158}{eps}} = 1e-\/7
+\item 
+double \mbox{\hyperlink{_fe_e_g_e_lib_8h_acf178c0d4fd43d942a79cab670f6c4a6}{Global\+Rating}} = 1.\+00f
+\item 
+bool \mbox{\hyperlink{_fe_e_g_e_lib_8h_ae8eec6ab31f0b4dafbbbfef9c26376e2}{iskey}} = false
+\item 
+key\+\_\+msg \mbox{\hyperlink{_fe_e_g_e_lib_8h_adeefe5fe064a6fbe3be9afcce7734fad}{keymsg}}
+\item 
+bool \mbox{\hyperlink{_fe_e_g_e_lib_8h_a0f39f419f621b9148e75a34075b7a891}{mousehit}} = false
+\item 
+bool \mbox{\hyperlink{_fe_e_g_e_lib_8h_a17b4309595c1f66709998c0cd3c38b21}{needsort}} = true
+\item 
+bool \mbox{\hyperlink{_fe_e_g_e_lib_8h_a2bc93499a3b1b40d903f22185a754405}{reg\+\_\+pause}} = false
+\item 
+mouse\+\_\+msg \mbox{\hyperlink{_fe_e_g_e_lib_8h_a5692ef595aa8879829a4e2e9dded9bb5}{mouseinfo}}
+\item 
+bool \mbox{\hyperlink{_fe_e_g_e_lib_8h_a227fd4440811d6d09a4c24737ec772f9}{keystatus}} \mbox{[}360\mbox{]}
+\item 
+map$<$ string, function$<$ void(void)$>$ $>$ \mbox{\hyperlink{_fe_e_g_e_lib_8h_a40489e4ca16505489bd0507204ac4320}{global\+Listen\+\_\+frame\+\_\+function\+\_\+set}}
+\item 
+map$<$ string, function$<$ void(void)$>$ $>$ \mbox{\hyperlink{_fe_e_g_e_lib_8h_a212710b770d16da09b110549c4c962fe}{global\+Listen\+\_\+on\+\_\+click\+\_\+function\+\_\+set}}
+\item 
+int \mbox{\hyperlink{_fe_e_g_e_lib_8h_a59c3bba4b17cd5e19f149ea175fa6989}{WIDTH}}
+\item 
+int \mbox{\hyperlink{_fe_e_g_e_lib_8h_a4e81322eb1085aca9cd7c5527f5e4c6b}{HEIGHT}}
+\item 
+vector$<$ function$<$ void(void)$>$ $>$ \mbox{\hyperlink{_fe_e_g_e_lib_8h_ae5c7261ff42d226889af6912aedcff5b}{schedule}}
+\item 
+map$<$ double, vector$<$ function$<$ void(void)$>$ $>$ $>$ \mbox{\hyperlink{_fe_e_g_e_lib_8h_a50704d2b04f7d0c66b4c41f1fc9534c9}{schedule\+\_\+time\+Out}}
+\item 
+int \mbox{\hyperlink{_fe_e_g_e_lib_8h_afd04a0d85e97a7436534f02d287d25b7}{\+\_\+\+\_\+\+SIZE\+\_\+\+\_\+}} = 0
+\item 
+int \mbox{\hyperlink{_fe_e_g_e_lib_8h_af824f9fffef1d5353416ea0cc466c47b}{removesize}} = 0
+\item 
+bool \mbox{\hyperlink{_fe_e_g_e_lib_8h_af01424a05c707cb11735312b6cc2b934}{close\+Graph}} = false
+\item 
+PIMAGE \mbox{\hyperlink{_fe_e_g_e_lib_8h_abff83570e66e504632fbb0df2f1e687f}{pen\+\_\+image}}
+\item 
+unordered\+\_\+map$<$ string, \mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{_fe_e_g_e_lib_8h_aa9b2fb95db3309e4a5756ac2a72b821b}{Id\+To\+Element}}
+\item 
+unordered\+\_\+map$<$ \mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*}, bool $>$ \mbox{\hyperlink{_fe_e_g_e_lib_8h_aa759965c38697c0eff98b46dfdfb35a3}{Element\+Is\+In}}
+\item 
+class \mbox{\hyperlink{class_position}{Position}} \mbox{\hyperlink{_fe_e_g_e_lib_8h_a7ec6f92a495370c0f26b5eec70af7a20}{lastpixel}}
+\item 
+class \mbox{\hyperlink{class_position}{Position}} \mbox{\hyperlink{_fe_e_g_e_lib_8h_a8470a4104a935f3d174bc796e6bd5e17}{mouse\+Pos}}
+\item 
+\mbox{\hyperlink{class_fe_e_g_e_1_1_events}{Events}} \mbox{\hyperlink{namespace_fe_e_g_e_af2126ff4616cd9392dac81eac6767347}{Fe\+EGE\+::\+Event\+Type}}
+\item 
+\mbox{\hyperlink{class_fe_e_g_e_1_1_pen_types}{Pen\+Types}} \mbox{\hyperlink{namespace_fe_e_g_e_a2d8fce440c746184705e31f494bb32ce}{Fe\+EGE\+::\+Pen\+Type}}
+\item 
+int \mbox{\hyperlink{_fe_e_g_e_lib_8h_aa45b21371d960fcfc5375d0ab358f42d}{current\+\_\+reg\+\_\+order}} = 0
+\item 
+unsigned long long \mbox{\hyperlink{_fe_e_g_e_lib_8h_ada37c76444f56f4a8dd71f77f25a0b83}{frame}} = 0
+\item 
+queue$<$ \mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{_fe_e_g_e_lib_8h_a06c10a11d95b467edbdc4c7aba75754c}{Free\+List}}
+\item 
+set$<$ \mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classcmp}{cmp}} $>$ \mbox{\hyperlink{_fe_e_g_e_lib_8h_a1f632ed1b64b3ec1e62a5f8a1137b0f3}{Element\+\_\+queue}}
+\item 
+int \mbox{\hyperlink{namespacepen_a8799727fa866873d9b663c7f99b28596}{pen\+::order}} = 0
+\item 
+int \mbox{\hyperlink{namespacepen_a9265cbe1b4dba9f9364c0169e15d25d2}{pen\+::fontscale}} = 1
+\item 
+short \mbox{\hyperlink{namespacepen_ac62e33ec31aee0774923b4af8a86bb36}{pen\+::penalpha}} = 255
+\item 
+int \mbox{\hyperlink{namespacepen_a7f7731203bd8645f184b1529731faae3}{pen\+::pen\+Type}} = Fe\+EGE\+::\+Pen\+Type.\+left
+\item 
+int \mbox{\hyperlink{namespacepen_a8797808c2c43abb23eabd2c620ed81d5}{pen\+::charwidth}}
+\item 
+int \mbox{\hyperlink{namespacepen_a63733f41782bc133a013e18f2809bb60}{pen\+::charheight}}
+\item 
+mutex \mbox{\hyperlink{_fe_e_g_e_lib_8h_afba6db314acb225f40580d69afacabee}{M}}
+\item 
+\mbox{\hyperlink{class_element}{Element}} \mbox{\hyperlink{_fe_e_g_e_lib_8h_a9be440edfc4591932f46c5c4cd882371}{Element\+Pool}} \mbox{[}\mbox{\hyperlink{_fe_e_g_e_lib_8h_a4f9b1b85cdd0f3bde98282a1b2381005}{MAXELEMENTCOUNT}}\mbox{]}
+\item 
+bool \mbox{\hyperlink{_fe_e_g_e_lib_8h_a9aa199859b5a579d7d70ba70d0a5c587}{Element\+Pool\+Used}} \mbox{[}\mbox{\hyperlink{_fe_e_g_e_lib_8h_a4f9b1b85cdd0f3bde98282a1b2381005}{MAXELEMENTCOUNT}}\mbox{]} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\begin{DoxyAuthor}{作者}
+Fe\+JS8888 (\href{mailto:fmxfmx2007@gmail.com}{\texttt{ fmxfmx2007@gmail.\+com}},\href{mailto:fmxfmx2007@163.com}{\texttt{ fmxfmx2007@163.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{版本}
+V1.\+2.\+15.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{日期}
+2025-\/01-\/07
+\end{DoxyDate}
+\begin{DoxyCopyright}{版权所有}
+MIT 
+\end{DoxyCopyright}
+
+
+\doxysubsection{宏定义说明}
+\Hypertarget{_fe_e_g_e_lib_8h_a6d9a467c72db0d6402a4ccdf86933878}\index{FeEGELib.h@{FeEGELib.h}!FeEGELib\_version@{FeEGELib\_version}}
+\index{FeEGELib\_version@{FeEGELib\_version}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{FeEGELib\_version}{FeEGELib\_version}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a6d9a467c72db0d6402a4ccdf86933878} 
+\#define Fe\+EGELib\+\_\+version~"{}V1.\+2.\+15.\+0-\/-\/upd2025-\/01-\/07"{}}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a1f6be9ac76a2e065e034c89f0cfe6763}\index{FeEGELib.h@{FeEGELib.h}!initXY@{initXY}}
+\index{initXY@{initXY}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{initXY}{initXY}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a1f6be9ac76a2e065e034c89f0cfe6763} 
+\#define init\+XY(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{\mbox{\hyperlink{_fe_e_g_e_lib_8h_a59c3bba4b17cd5e19f149ea175fa6989}{WIDTH}}\ =\ getwidth();\mbox{\hyperlink{_fe_e_g_e_lib_8h_a4e81322eb1085aca9cd7c5527f5e4c6b}{HEIGHT}}\ =\ getheight();\}}
+
+\end{DoxyCode}
+\Hypertarget{_fe_e_g_e_lib_8h_a88efc8b48e041ff6182b56cde95f716b}\index{FeEGELib.h@{FeEGELib.h}!LeftButton@{LeftButton}}
+\index{LeftButton@{LeftButton}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{LeftButton}{LeftButton}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a88efc8b48e041ff6182b56cde95f716b} 
+\#define Left\+Button~VK\+\_\+\+LBUTTON}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a25274c13d478263ec5322541d7bbfeee}\index{FeEGELib.h@{FeEGELib.h}!log@{log}}
+\index{log@{log}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{log}{log}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a25274c13d478263ec5322541d7bbfeee} 
+\#define log~printf}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a7837b82187f56db041c39b0913c5dfa5}\index{FeEGELib.h@{FeEGELib.h}!MAXCLONESCOUNT@{MAXCLONESCOUNT}}
+\index{MAXCLONESCOUNT@{MAXCLONESCOUNT}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{MAXCLONESCOUNT}{MAXCLONESCOUNT}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a7837b82187f56db041c39b0913c5dfa5} 
+\#define MAXCLONESCOUNT~100}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a4f9b1b85cdd0f3bde98282a1b2381005}\index{FeEGELib.h@{FeEGELib.h}!MAXELEMENTCOUNT@{MAXELEMENTCOUNT}}
+\index{MAXELEMENTCOUNT@{MAXELEMENTCOUNT}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{MAXELEMENTCOUNT}{MAXELEMENTCOUNT}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a4f9b1b85cdd0f3bde98282a1b2381005} 
+\#define MAXELEMENTCOUNT~100}
+
+\Hypertarget{_fe_e_g_e_lib_8h_ac40c2b49eb51e2adc237b530adfcadf4}\index{FeEGELib.h@{FeEGELib.h}!PIE@{PIE}}
+\index{PIE@{PIE}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{PIE}{PIE}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_ac40c2b49eb51e2adc237b530adfcadf4} 
+\#define PIE~3.\+141592653589793238462643383279502f}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a2a79e63190ab37e5d6dafdd1eef5630f}\index{FeEGELib.h@{FeEGELib.h}!version@{version}}
+\index{version@{version}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a2a79e63190ab37e5d6dafdd1eef5630f} 
+\#define version(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries 值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_fe_e_g_e_lib_8h_a6d9a467c72db0d6402a4ccdf86933878}{FeEGELib\_version}}}
+
+\end{DoxyCode}
+\Hypertarget{_fe_e_g_e_lib_8h_a207fd5507206d307cd63f95374fcd00d}\index{FeEGELib.h@{FeEGELib.h}!X@{X}}
+\index{X@{X}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a207fd5507206d307cd63f95374fcd00d} 
+\#define X~\mbox{\hyperlink{_fe_e_g_e_lib_8h_a59c3bba4b17cd5e19f149ea175fa6989}{WIDTH}}}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a798e4073d613ca5ba9618e1b3253df14}\index{FeEGELib.h@{FeEGELib.h}!Y@{Y}}
+\index{Y@{Y}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a798e4073d613ca5ba9618e1b3253df14} 
+\#define Y~\mbox{\hyperlink{_fe_e_g_e_lib_8h_a4e81322eb1085aca9cd7c5527f5e4c6b}{HEIGHT}}}
+
+
+
+\doxysubsection{函数说明}
+\Hypertarget{_fe_e_g_e_lib_8h_aee070a861cc0647e57b6549bec34d807}\index{FeEGELib.h@{FeEGELib.h}!globalListen@{globalListen}}
+\index{globalListen@{globalListen}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{globalListen()}{globalListen()}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_aee070a861cc0647e57b6549bec34d807} 
+void global\+Listen (\begin{DoxyParamCaption}\item[{int}]{listen\+\_\+mode}{, }\item[{string}]{identifier}{, }\item[{auto}]{function}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{参数}
+{\em listen\+\_\+mode} & \\
+\hline
+{\em identifier} & \\
+\hline
+{\em function} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_fe_e_g_e_lib_8h_a909f4bd65ee24e59e188ae93c3e0e8c4}\index{FeEGELib.h@{FeEGELib.h}!init@{init}}
+\index{init@{init}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a909f4bd65ee24e59e188ae93c3e0e8c4} 
+void init (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{参数}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_fe_e_g_e_lib_8h_afdd2b882d41d6ccbe23d0d9505b8ca62}\index{FeEGELib.h@{FeEGELib.h}!newButton@{newButton}}
+\index{newButton@{newButton}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{newButton()}{newButton()}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_afdd2b882d41d6ccbe23d0d9505b8ca62} 
+\mbox{\hyperlink{class_button}{Button}} \texorpdfstring{$\ast$}{*} new\+Button (\begin{DoxyParamCaption}\item[{string}]{id}{, }\item[{string}]{Image\+Path}{, }\item[{double}]{x}{, }\item[{double}]{y}{, }\item[{function$<$ void(\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*})$>$}]{put\+\_\+on}{ = {\ttfamily nullptr}, }\item[{function$<$ void(\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*})$>$}]{move\+\_\+away}{ = {\ttfamily nullptr}, }\item[{function$<$ void(\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*})$>$}]{on\+\_\+click}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{参数}
+{\em id} & \\
+\hline
+{\em Image\+Path} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em put\+\_\+on} & \\
+\hline
+{\em move\+\_\+away} & \\
+\hline
+{\em on\+\_\+click} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Button\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+\Hypertarget{_fe_e_g_e_lib_8h_a2601aa74302c0fa42d6b7a4e332104c0}\index{FeEGELib.h@{FeEGELib.h}!newElement@{newElement}}
+\index{newElement@{newElement}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{newElement()}{newElement()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a2601aa74302c0fa42d6b7a4e332104c0} 
+\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*} new\+Element (\begin{DoxyParamCaption}\item[{string}]{id}{, }\item[{PIMAGE}]{image}{, }\item[{double}]{x}{ = {\ttfamily 0}, }\item[{double}]{y}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{参数}
+{\em id} & \\
+\hline
+{\em image} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Element\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+\Hypertarget{_fe_e_g_e_lib_8h_a54d815a3ea83a3c2b1669c3d0aab5b71}\index{FeEGELib.h@{FeEGELib.h}!newElement@{newElement}}
+\index{newElement@{newElement}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{newElement()}{newElement()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a54d815a3ea83a3c2b1669c3d0aab5b71} 
+\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*} new\+Element (\begin{DoxyParamCaption}\item[{string}]{id}{, }\item[{string}]{Image\+Path}{, }\item[{double}]{x}{ = {\ttfamily 0}, }\item[{double}]{y}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{参数}
+{\em id} & \\
+\hline
+{\em Image\+Path} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Element\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+\Hypertarget{_fe_e_g_e_lib_8h_ac7f238a362fd3cc7b83d7289c4e10701}\index{FeEGELib.h@{FeEGELib.h}!newInputBox@{newInputBox}}
+\index{newInputBox@{newInputBox}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{newInputBox()}{newInputBox()}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_ac7f238a362fd3cc7b83d7289c4e10701} 
+\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*} new\+Input\+Box (\begin{DoxyParamCaption}\item[{string}]{id}{, }\item[{string}]{Image\+Path}{, }\item[{double}]{x}{, }\item[{double}]{y}{, }\item[{\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*}}]{submit\+\_\+button}{, }\item[{function$<$ void(\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*})$>$}]{on\+\_\+submit}{ = {\ttfamily nullptr}, }\item[{function$<$ void(\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*})$>$}]{on\+\_\+selected}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{参数}
+{\em id} & \\
+\hline
+{\em Image\+Path} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em submit\+\_\+button} & \\
+\hline
+{\em on\+\_\+submit} & \\
+\hline
+{\em on\+\_\+selected} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+Element\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+\Hypertarget{_fe_e_g_e_lib_8h_a128952854ca90868b475af18eeb19bd7}\index{FeEGELib.h@{FeEGELib.h}!reflush@{reflush}}
+\index{reflush@{reflush}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{reflush()}{reflush()}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a128952854ca90868b475af18eeb19bd7} 
+void reflush (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_fe_e_g_e_lib_8h_ae625c76239a79060894c09200fd45458}\index{FeEGELib.h@{FeEGELib.h}!reg\_Element@{reg\_Element}}
+\index{reg\_Element@{reg\_Element}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{reg\_Element()}{reg\_Element()}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_ae625c76239a79060894c09200fd45458} 
+void reg\+\_\+\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*}}]{element}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{参数}
+{\em element} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_fe_e_g_e_lib_8h_af0b83fec1f079fdfc6b271a65784da6a}\index{FeEGELib.h@{FeEGELib.h}!SelectInputBox@{SelectInputBox}}
+\index{SelectInputBox@{SelectInputBox}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{SelectInputBox()}{SelectInputBox()}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_af0b83fec1f079fdfc6b271a65784da6a} 
+void Select\+Input\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_input_box}{Input\+Box}} \texorpdfstring{$\ast$}{*}}]{input\+Box}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{参数}
+{\em input\+Box} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_fe_e_g_e_lib_8h_a2f12a64b87e6cf1be8360bbb056f8680}\index{FeEGELib.h@{FeEGELib.h}!sgn@{sgn}}
+\index{sgn@{sgn}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{sgn()}{sgn()}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a2f12a64b87e6cf1be8360bbb056f8680} 
+int sgn (\begin{DoxyParamCaption}\item[{double}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a60de64d75454385b23995437f1d72669}\index{FeEGELib.h@{FeEGELib.h}!start@{start}}
+\index{start@{start}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a60de64d75454385b23995437f1d72669} 
+void start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a6f959a7bd72a9fc756149eb63c838e80}\index{FeEGELib.h@{FeEGELib.h}!stopGlobalListen@{stopGlobalListen}}
+\index{stopGlobalListen@{stopGlobalListen}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{stopGlobalListen()}{stopGlobalListen()}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a6f959a7bd72a9fc756149eb63c838e80} 
+void stop\+Global\+Listen (\begin{DoxyParamCaption}\item[{int}]{listen\+\_\+mode}{, }\item[{string}]{identifier}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{参数}
+{\em listen\+\_\+mode} & \\
+\hline
+{\em identifier} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{变量说明}
+\Hypertarget{_fe_e_g_e_lib_8h_afd04a0d85e97a7436534f02d287d25b7}\index{FeEGELib.h@{FeEGELib.h}!\_\_SIZE\_\_@{\_\_SIZE\_\_}}
+\index{\_\_SIZE\_\_@{\_\_SIZE\_\_}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{\_\_SIZE\_\_}{\_\_SIZE\_\_}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_afd04a0d85e97a7436534f02d287d25b7} 
+int \+\_\+\+\_\+\+SIZE\+\_\+\+\_\+ = 0}
+
+\Hypertarget{_fe_e_g_e_lib_8h_af01424a05c707cb11735312b6cc2b934}\index{FeEGELib.h@{FeEGELib.h}!closeGraph@{closeGraph}}
+\index{closeGraph@{closeGraph}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{closeGraph}{closeGraph}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_af01424a05c707cb11735312b6cc2b934} 
+bool close\+Graph = false}
+
+\Hypertarget{_fe_e_g_e_lib_8h_aa45b21371d960fcfc5375d0ab358f42d}\index{FeEGELib.h@{FeEGELib.h}!current\_reg\_order@{current\_reg\_order}}
+\index{current\_reg\_order@{current\_reg\_order}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{current\_reg\_order}{current\_reg\_order}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_aa45b21371d960fcfc5375d0ab358f42d} 
+int current\+\_\+reg\+\_\+order = 0}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a1f632ed1b64b3ec1e62a5f8a1137b0f3}\index{FeEGELib.h@{FeEGELib.h}!Element\_queue@{Element\_queue}}
+\index{Element\_queue@{Element\_queue}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{Element\_queue}{Element\_queue}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a1f632ed1b64b3ec1e62a5f8a1137b0f3} 
+set$<$\mbox{\hyperlink{class_element}{Element}}\texorpdfstring{$\ast$}{*},\mbox{\hyperlink{classcmp}{cmp}}$>$ Element\+\_\+queue}
+
+\Hypertarget{_fe_e_g_e_lib_8h_aa759965c38697c0eff98b46dfdfb35a3}\index{FeEGELib.h@{FeEGELib.h}!ElementIsIn@{ElementIsIn}}
+\index{ElementIsIn@{ElementIsIn}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{ElementIsIn}{ElementIsIn}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_aa759965c38697c0eff98b46dfdfb35a3} 
+unordered\+\_\+map$<$\mbox{\hyperlink{class_element}{Element}}\texorpdfstring{$\ast$}{*},bool$>$ Element\+Is\+In}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a9be440edfc4591932f46c5c4cd882371}\index{FeEGELib.h@{FeEGELib.h}!ElementPool@{ElementPool}}
+\index{ElementPool@{ElementPool}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{ElementPool}{ElementPool}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a9be440edfc4591932f46c5c4cd882371} 
+\mbox{\hyperlink{class_element}{Element}} Element\+Pool\mbox{[}\mbox{\hyperlink{_fe_e_g_e_lib_8h_a4f9b1b85cdd0f3bde98282a1b2381005}{MAXELEMENTCOUNT}}\mbox{]}}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a9aa199859b5a579d7d70ba70d0a5c587}\index{FeEGELib.h@{FeEGELib.h}!ElementPoolUsed@{ElementPoolUsed}}
+\index{ElementPoolUsed@{ElementPoolUsed}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{ElementPoolUsed}{ElementPoolUsed}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a9aa199859b5a579d7d70ba70d0a5c587} 
+bool Element\+Pool\+Used\mbox{[}\mbox{\hyperlink{_fe_e_g_e_lib_8h_a4f9b1b85cdd0f3bde98282a1b2381005}{MAXELEMENTCOUNT}}\mbox{]} = \{\}}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a3d8c24629d725b9ef8c238cf27c9b158}\index{FeEGELib.h@{FeEGELib.h}!eps@{eps}}
+\index{eps@{eps}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{eps}{eps}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a3d8c24629d725b9ef8c238cf27c9b158} 
+const double eps = 1e-\/7}
+
+\Hypertarget{_fe_e_g_e_lib_8h_ada37c76444f56f4a8dd71f77f25a0b83}\index{FeEGELib.h@{FeEGELib.h}!frame@{frame}}
+\index{frame@{frame}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{frame}{frame}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_ada37c76444f56f4a8dd71f77f25a0b83} 
+unsigned long long frame = 0}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a06c10a11d95b467edbdc4c7aba75754c}\index{FeEGELib.h@{FeEGELib.h}!FreeList@{FreeList}}
+\index{FreeList@{FreeList}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{FreeList}{FreeList}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a06c10a11d95b467edbdc4c7aba75754c} 
+queue$<$\mbox{\hyperlink{class_element}{Element}}\texorpdfstring{$\ast$}{*}$>$ Free\+List}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a40489e4ca16505489bd0507204ac4320}\index{FeEGELib.h@{FeEGELib.h}!globalListen\_frame\_function\_set@{globalListen\_frame\_function\_set}}
+\index{globalListen\_frame\_function\_set@{globalListen\_frame\_function\_set}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{globalListen\_frame\_function\_set}{globalListen\_frame\_function\_set}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a40489e4ca16505489bd0507204ac4320} 
+map$<$string,function$<$void(void)$>$ $>$ global\+Listen\+\_\+frame\+\_\+function\+\_\+set}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a212710b770d16da09b110549c4c962fe}\index{FeEGELib.h@{FeEGELib.h}!globalListen\_on\_click\_function\_set@{globalListen\_on\_click\_function\_set}}
+\index{globalListen\_on\_click\_function\_set@{globalListen\_on\_click\_function\_set}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{globalListen\_on\_click\_function\_set}{globalListen\_on\_click\_function\_set}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a212710b770d16da09b110549c4c962fe} 
+map$<$string,function$<$void(void)$>$ $>$ global\+Listen\+\_\+on\+\_\+click\+\_\+function\+\_\+set}
+
+\Hypertarget{_fe_e_g_e_lib_8h_acf178c0d4fd43d942a79cab670f6c4a6}\index{FeEGELib.h@{FeEGELib.h}!GlobalRating@{GlobalRating}}
+\index{GlobalRating@{GlobalRating}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{GlobalRating}{GlobalRating}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_acf178c0d4fd43d942a79cab670f6c4a6} 
+double Global\+Rating = 1.\+00f}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a4e81322eb1085aca9cd7c5527f5e4c6b}\index{FeEGELib.h@{FeEGELib.h}!HEIGHT@{HEIGHT}}
+\index{HEIGHT@{HEIGHT}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{HEIGHT}{HEIGHT}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a4e81322eb1085aca9cd7c5527f5e4c6b} 
+int HEIGHT}
+
+\Hypertarget{_fe_e_g_e_lib_8h_aa9b2fb95db3309e4a5756ac2a72b821b}\index{FeEGELib.h@{FeEGELib.h}!IdToElement@{IdToElement}}
+\index{IdToElement@{IdToElement}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{IdToElement}{IdToElement}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_aa9b2fb95db3309e4a5756ac2a72b821b} 
+unordered\+\_\+map$<$string,\mbox{\hyperlink{class_element}{Element}}\texorpdfstring{$\ast$}{*}$>$ Id\+To\+Element}
+
+\Hypertarget{_fe_e_g_e_lib_8h_ae8eec6ab31f0b4dafbbbfef9c26376e2}\index{FeEGELib.h@{FeEGELib.h}!iskey@{iskey}}
+\index{iskey@{iskey}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{iskey}{iskey}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_ae8eec6ab31f0b4dafbbbfef9c26376e2} 
+bool iskey = false}
+
+\Hypertarget{_fe_e_g_e_lib_8h_adeefe5fe064a6fbe3be9afcce7734fad}\index{FeEGELib.h@{FeEGELib.h}!keymsg@{keymsg}}
+\index{keymsg@{keymsg}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{keymsg}{keymsg}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_adeefe5fe064a6fbe3be9afcce7734fad} 
+key\+\_\+msg keymsg}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a227fd4440811d6d09a4c24737ec772f9}\index{FeEGELib.h@{FeEGELib.h}!keystatus@{keystatus}}
+\index{keystatus@{keystatus}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{keystatus}{keystatus}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a227fd4440811d6d09a4c24737ec772f9} 
+bool keystatus\mbox{[}360\mbox{]}}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a7ec6f92a495370c0f26b5eec70af7a20}\index{FeEGELib.h@{FeEGELib.h}!lastpixel@{lastpixel}}
+\index{lastpixel@{lastpixel}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{lastpixel}{lastpixel}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a7ec6f92a495370c0f26b5eec70af7a20} 
+class \mbox{\hyperlink{class_position}{Position}} lastpixel}
+
+\Hypertarget{_fe_e_g_e_lib_8h_afba6db314acb225f40580d69afacabee}\index{FeEGELib.h@{FeEGELib.h}!M@{M}}
+\index{M@{M}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{M}{M}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_afba6db314acb225f40580d69afacabee} 
+mutex M}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a0f39f419f621b9148e75a34075b7a891}\index{FeEGELib.h@{FeEGELib.h}!mousehit@{mousehit}}
+\index{mousehit@{mousehit}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{mousehit}{mousehit}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a0f39f419f621b9148e75a34075b7a891} 
+bool mousehit = false}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a5692ef595aa8879829a4e2e9dded9bb5}\index{FeEGELib.h@{FeEGELib.h}!mouseinfo@{mouseinfo}}
+\index{mouseinfo@{mouseinfo}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{mouseinfo}{mouseinfo}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a5692ef595aa8879829a4e2e9dded9bb5} 
+mouse\+\_\+msg mouseinfo}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a8470a4104a935f3d174bc796e6bd5e17}\index{FeEGELib.h@{FeEGELib.h}!mousePos@{mousePos}}
+\index{mousePos@{mousePos}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{mousePos}{mousePos}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a8470a4104a935f3d174bc796e6bd5e17} 
+class \mbox{\hyperlink{class_position}{Position}} mouse\+Pos}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a17b4309595c1f66709998c0cd3c38b21}\index{FeEGELib.h@{FeEGELib.h}!needsort@{needsort}}
+\index{needsort@{needsort}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{needsort}{needsort}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a17b4309595c1f66709998c0cd3c38b21} 
+bool needsort = true}
+
+\Hypertarget{_fe_e_g_e_lib_8h_abff83570e66e504632fbb0df2f1e687f}\index{FeEGELib.h@{FeEGELib.h}!pen\_image@{pen\_image}}
+\index{pen\_image@{pen\_image}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{pen\_image}{pen\_image}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_abff83570e66e504632fbb0df2f1e687f} 
+PIMAGE pen\+\_\+image}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a2bc93499a3b1b40d903f22185a754405}\index{FeEGELib.h@{FeEGELib.h}!reg\_pause@{reg\_pause}}
+\index{reg\_pause@{reg\_pause}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{reg\_pause}{reg\_pause}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a2bc93499a3b1b40d903f22185a754405} 
+bool reg\+\_\+pause = false}
+
+\Hypertarget{_fe_e_g_e_lib_8h_af824f9fffef1d5353416ea0cc466c47b}\index{FeEGELib.h@{FeEGELib.h}!removesize@{removesize}}
+\index{removesize@{removesize}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{removesize}{removesize}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_af824f9fffef1d5353416ea0cc466c47b} 
+int removesize = 0}
+
+\Hypertarget{_fe_e_g_e_lib_8h_ae5c7261ff42d226889af6912aedcff5b}\index{FeEGELib.h@{FeEGELib.h}!schedule@{schedule}}
+\index{schedule@{schedule}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{schedule}{schedule}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_ae5c7261ff42d226889af6912aedcff5b} 
+vector$<$function$<$void(void)$>$ $>$ schedule}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a50704d2b04f7d0c66b4c41f1fc9534c9}\index{FeEGELib.h@{FeEGELib.h}!schedule\_timeOut@{schedule\_timeOut}}
+\index{schedule\_timeOut@{schedule\_timeOut}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{schedule\_timeOut}{schedule\_timeOut}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a50704d2b04f7d0c66b4c41f1fc9534c9} 
+map$<$double,vector$<$function$<$void(void)$>$ $>$ $>$ schedule\+\_\+time\+Out}
+
+\Hypertarget{_fe_e_g_e_lib_8h_a59c3bba4b17cd5e19f149ea175fa6989}\index{FeEGELib.h@{FeEGELib.h}!WIDTH@{WIDTH}}
+\index{WIDTH@{WIDTH}!FeEGELib.h@{FeEGELib.h}}
+\doxysubsubsection{\texorpdfstring{WIDTH}{WIDTH}}
+{\footnotesize\ttfamily \label{_fe_e_g_e_lib_8h_a59c3bba4b17cd5e19f149ea175fa6989} 
+int WIDTH}
+
